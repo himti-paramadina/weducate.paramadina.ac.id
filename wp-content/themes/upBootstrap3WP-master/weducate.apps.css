@@ -31,3 +31,48 @@
 .content-before-footer {
 	padding-top: 10px;
 }
+
+a.top-login-link {
+	color: #f0efef; 
+	line-height: 41px; 
+	margin-right: 30px;
+	font-family: 'Open Sans', arial;
+	font-size: 1.2em;
+}
+
+a.top-login-link:hover {
+	color: yellow;
+}
+
+/* Overridden Bootstrap Styles */
+
+.navbar {
+	height: 155px;
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-default {
+	background-color: #09a1da;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.nav > li > a {
+	font-family: 'Open Sans', arial;
+	color: #f0efef !important;
+	font-size: 1.2em;
+}
+
+.nav > li.active > a {
+	background-color: #444345 !important;
+}
+
+.navbar-brand {
+	width: 469px;
+	height: 155px;
+	padding: 0;
+	margin-left: 0 !important; 
+}
