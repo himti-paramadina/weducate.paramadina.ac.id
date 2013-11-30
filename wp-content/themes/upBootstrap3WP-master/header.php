@@ -15,16 +15,22 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/weducate.apps.css">
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/weducate.apps.css">
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header container" role="banner">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div style="height: 41px; background-color: #444345;">
+			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span>   Log In</a></p>
+		</div>
+		<nav class="navbar navbar-default" role="navigation">
 		
 			<div class="container">
 				<div class="row">
@@ -36,7 +42,7 @@
 					            <span class="icon-bar"></span>
 							</button>
 				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
+				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="<?php echo get_template_directory_uri() ?>/img/logo.png"/></a>
 				            
 				        </div>
 						
