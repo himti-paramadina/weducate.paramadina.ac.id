@@ -12,16 +12,16 @@
 	</div><!-- #content -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<footer id="colophon" class="site-footer" role="contentinfo">
-					<div class="site-info">
-						<?php do_action( 'upbootwp_credits' ); ?>
-						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
-						<span class="sep"> | </span>
-						<?php printf(__('Theme: %1$s by %2$s.', 'upbootwp' ), 'upBootWP', '<a href="http://upplex.de" rel="designer">upplex</a>'); ?>
-					</div><!-- .site-info -->
-				</footer><!-- #colophon -->
-			</div><!-- .col-md-12 -->
+            
+			<div class="before-footer">
+            
+            
+            </div>
+            
+            <div class="footer">
+                <p>@ weducate 2013 | Privasi & aturan | Term of service</p>            
+            </div>
+            
 		</div><!-- .row -->
 	</div><!-- container -->
 </div><!-- #page -->

@@ -15,6 +15,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/weducate.apps.css">
 
 <?php wp_head(); ?>
 </head>
