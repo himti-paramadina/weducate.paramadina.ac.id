@@ -9,3 +9,25 @@
     padding-right:38px;
     float:right;
 }
+
+.before-footer {
+	background-color:#444345;
+	height:100%;
+}
+
+.before-footer p {
+	color: #939393;
+}
+
+.before-footer h4 {
+	color: #939393;
+	font-size: 14pt;
+}
+
+.title-before-footer {
+	border-bottom: 1px solid white;
+}
+
+.content-before-footer {
+	padding-top: 10px;
+}

@@ -10,20 +10,62 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="container">
-		<div class="row">
-            
-			<div class="before-footer">
-            
-            
+		
+	          
+			<div class="container before-footer">
+				<div class="row">
+            		<div class="col-md-4">
+            			<div class="title-before-footer">
+            				<h4>Artiel Terkini</h4>
+            			</div>
+            			<div class="content-before-footer">            			
+	            			<p>
+	            				Pro Kontra UU ITE</br>
+	            				Evolusi E-Commerce</br>
+	            				Profil Ruby on Rail</br>
+	            				Dampak Negatif Gadget
+	            			</p>
+	            		</div>
+            		</div>
+
+            		<div class="col-md-4">
+            			<div class="title-before-footer">
+            				<h4>Artikel Terpopuler</h4>
+            			</div>
+            			<div class="content-before-footer">
+	            			<p>
+	            				Pro Kontra UU ITE</br>
+	            				Evolusi E-Commerce</br>
+	            				Profil Ruby on Rail</br>
+	            				Dampak Negatif Gadget
+	            			</p>
+	            		</div>
+            		</div>
+
+            		<div class="col-md-4">
+            			<div class="title-before-footer">
+            				<h4>Credits</h4>
+            			</div>
+            			<div class="content-before-footer">
+	            			<p>
+	            				Prodi Teknik Informatika</br>
+	            				Universitas Paramadina</br>
+	            				Copyright Weducate</br>
+	            				Powered by Wordpress
+	            			</p>
+            			</div>
+            		</div>
+            	</div>
+            </div>   
+
+
+        	<div class="container footer">
+        		<div class="row">
+            		<p>@ weducate 2013 | Privasi & aturan | Term of service</p>            
+            	</div>
             </div>
             
-            <div class="footer">
-                <p>@ weducate 2013 | Privasi & aturan | Term of service</p>            
-            </div>
-            
-		</div><!-- .row -->
-	</div><!-- container -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
