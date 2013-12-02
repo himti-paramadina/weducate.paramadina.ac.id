@@ -77,8 +77,6 @@ get_header(); ?>
 
 				</div>
 
-				<br>
-
 				<div class="row">
 					<div class="line"></div>
 				</div>

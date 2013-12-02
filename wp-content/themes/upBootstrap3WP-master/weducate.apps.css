@@ -39,6 +39,10 @@
 	padding: 10px 50px 10px 50px;
 }
 
+.bg-white {
+	background-color: #000 !important;
+}
+
 a.top-login-link {
 	color: #f0efef; 
 	line-height: 41px; 
@@ -49,7 +53,7 @@ a.top-login-link {
 
 .line {
 	border-bottom: 5px solid #ececec;
-	margin: 0 15px 20px 15px;
+	margin: 20px 15px 20px 15px;
 }
 
 a.top-login-link:hover {
@@ -93,4 +97,8 @@ a.top-login-link:hover {
 	height: 155px;
 	padding: 0;
 	margin-left: 0 !important; 
+}
+
+.subscribe {
+	background-color: #ececec;
 }

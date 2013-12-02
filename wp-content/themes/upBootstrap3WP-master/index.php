@@ -14,38 +14,78 @@
 
 get_header(); ?>
 	<div class="container">
+
+		<div class="slider">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="category bg-white">
+
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="category bg-white">
+						<div class="subscribe-widget">
+							<div class="subscribe">
+								<input type="text" name="subscribe-text">
+								<button type="button" class="btn btn-primary">SUBSCRIBE US</button>
+							</div>
+						</div>
+
+						<div class="newest">
+							<div class="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="row">
-			<div class="col-md-8">
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
-					
-					<?php if ( have_posts() ) : ?>
-					
-						<?php while ( have_posts() ) : the_post(); ?>
-			
-							<?php
-								/* Include the Post-Format-specific template for the content.
-								 * If you want to override this in a child theme, then include a file
-								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-								 */
-								get_template_part('content', get_post_format());
-							?>
-			
-						<?php endwhile; ?>
-			
-						<?php upbootwp_content_nav('nav-below'); ?>
-			
-					<?php else : ?>
-						<?php get_template_part( 'no-results', 'index' ); ?>
-					<?php endif; ?>
-			
-					</main><!-- #main -->
-				</div><!-- #primary -->
-			</div><!-- .col-md-8 -->
-			
-			<div class="col-md-4">
-				<?php get_sidebar(); ?>
-			</div><!-- .col-md-4 -->
-		</div><!-- .row -->
+			<div class="line"></div>
+		</div>
+
+		<div class="call-to-action">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="category">
+						<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-apply.png" /></center></p>
+							<center>
+								<h3>Daftar</h3>
+								<p>
+									Bergabung dengan kami untuk berbagi pengetahuan dan pengalaman seputar teknologi informasi untuk kehidupan sehari-hari.
+								</p>
+								<button type="button" class="btn btn-primary btn-category">REGISTER</button>
+							</center>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+				 	<div class="category">
+				 		<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-write.png" /></center></p>
+							<center>
+								<h3>Tulis</h3>
+								<p>
+									Buatlah tulisan dan pengalaman yang berkaitan dengan perkembangan teknologi untuk berbagi dengan orang banyak.
+								</p>
+								<button type="button" class="btn btn-primary btn-category">BUAT TULISAN</button>
+							</center>
+				 	</div>
+				</div>
+
+				<div class="col-md-4">
+				 	<div class="category">
+				 		<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-discuss.png" /></center></p>
+							<center>
+								<h3>Diskusi</h3>
+								<p>
+									Bergabunglah dengan komunitas dari berbagai tempat untuk membahas topik-topik terkini mengenai teknologi informasi.
+								</p>
+								<button type="button" class="btn btn-primary btn-category">IKUT DISKUSI</button>
+							</center>
+				 	</div>
+				</div>
+			</div>
+		</div>
 	</div><!-- .container -->
 <?php get_footer(); ?>
