@@ -43,8 +43,14 @@
 	background-color: #000 !important;
 }
 
+.maps {
+	background-color: #fdcb01;
+}
+
 .maps-title {
-	font-size: 14pt;
+	font-size: 10pt;
+	line-height: 10px;
+	padding-top: 10px;
 }
 
 a.top-login-link {
