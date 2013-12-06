@@ -28,7 +28,7 @@ get_header(); ?>
 						<div class="subscribe-widget">
 							<div class="subscribe">
 								<input type="text" name="subscribe-text" class="input-subscribe">
-								<button type="button" class="btn btn-primary btn-subscribe">SUBSCRIBE US</button>
+								<button type="button" class="btn btn-warning btn-subscribe">SUBSCRIBE US</button>
 							</div>
 						</div>
 
