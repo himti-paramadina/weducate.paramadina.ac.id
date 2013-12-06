@@ -53,7 +53,23 @@ get_header(); ?>
 
 				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
+				<a href="#" id="contact-us-toggle"></a>
+				<div id="contact-us" style="display: none;">
+					<h1>Contact Us Content</h1>
+				</div>
+
+				<a href="#" id="our-team-toggle"></a>
+				<div id="our-team" style="display: none;">
+					<h1>Our Team Content</h1>
+				</div>
+
+				<a href="#" id="contributors-toggle"></a>
+				<div id="contributors" style="display: none;">
+					<h1>Contributors Content</h1>
+				</div>
+
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
+
 <?php get_footer(); ?>
