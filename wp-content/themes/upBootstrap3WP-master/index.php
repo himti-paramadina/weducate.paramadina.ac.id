@@ -27,7 +27,7 @@ get_header(); ?>
 					<div class="bg-white">
 						<div class="subscribe-widget">
 							<div class="subscribe">
-								<input type="text" name="subscribe-text" class="input-subscribe">
+								<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe">
 								<button type="button" class="btn btn-warning btn-subscribe">SUBSCRIBE US</button>
 							</div>
 						</div>
