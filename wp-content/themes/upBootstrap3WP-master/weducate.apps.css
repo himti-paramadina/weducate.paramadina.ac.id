@@ -43,6 +43,10 @@
 	background-color: #ffffff !important;
 }
 
+.maps-title {
+	font-size: 14pt;
+}
+
 a.top-login-link {
 	color: #f0efef; 
 	line-height: 41px; 
@@ -135,4 +139,34 @@ a.top-login-link:hover {
 .sub-newest {
 	height: 175px;
 	margin: 5px 10px 0 10px;
+}
+
+#contact-us-toggle {
+	background-image: url(img/contact-us-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
+
+#our-team-toggle {
+	background-image: url(img/our-team-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
+
+#contributors-toggle {
+	background-image: url(img/contributors-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
 }
