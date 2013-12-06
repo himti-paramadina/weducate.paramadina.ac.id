@@ -43,6 +43,10 @@
 	background-color: #000 !important;
 }
 
+.maps-title {
+	font-size: 14pt;
+}
+
 a.top-login-link {
 	color: #f0efef; 
 	line-height: 41px; 
