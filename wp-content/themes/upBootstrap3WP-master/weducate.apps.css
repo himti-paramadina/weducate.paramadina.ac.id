@@ -102,3 +102,33 @@ a.top-login-link:hover {
 .subscribe {
 	background-color: #ececec;
 }
+
+#contact-us-toggle {
+	background-image: url(img/contact-us-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
+
+#our-team-toggle {
+	background-image: url(img/our-team-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
+
+#contributors-toggle {
+	background-image: url(img/contributors-btn.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
