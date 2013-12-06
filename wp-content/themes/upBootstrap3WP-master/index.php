@@ -24,17 +24,31 @@ get_header(); ?>
 				</div>
 
 				<div class="col-md-3">
-					<div class="category bg-white">
+					<div class="bg-white">
 						<div class="subscribe-widget">
 							<div class="subscribe">
-								<input type="text" name="subscribe-text">
-								<button type="button" class="btn btn-primary">SUBSCRIBE US</button>
+								<input type="text" name="subscribe-text" class="input-subscribe">
+								<button type="button" class="btn btn-primary btn-subscribe">SUBSCRIBE US</button>
 							</div>
 						</div>
 
+						<div class="line-white"></div>
+
 						<div class="newest">
-							<div class="">
+							<div class="newest-title" style="padding-top: 10px;">
+								<center><p>Artikel Terbaru</p></center>
 							</div>
+
+							<div class="line-white" style="border-top-width: 5px;"></div>
+
+							<div class="sub-newest">															
+								<p>13.05 Dampak Social Media</p>
+								<p>12.56 Pro Kontra UU ITE</p>
+								<p>11.47 Profil Ruby On Rail</p>
+								<p>10.45 Mengulas 4G/LTE</p>
+								<p>09.55 Serangan Virus</p>
+								<p>09.14 Evolusi E-Commerce</p>							
+							</div>							
 						</div>
 					</div>
 				</div>
