@@ -8,7 +8,7 @@
 get_header(); ?>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-9">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
 			
@@ -30,8 +30,24 @@ get_header(); ?>
 				</div><!-- #primary -->
 			</div><!-- .col-md-8 -->
 			
-			<div class="col-md-4">
-				<?php get_sidebar(); ?>
+			<div class="col-md-3">
+					<div class="bg-white">
+					<div class="toggle-category">
+
+					</div>
+
+					<div class="subscribe-widget">
+						<div class="subscribe">
+							<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe">
+							<button type="button" class="btn btn-warning btn-subscribe">SUBSCRIBE US</button>
+						</div>
+					</div>
+
+					<div class="twitter-widget">
+						<a class="twitter-timeline" href="https://twitter.com/ITparamadina" data-widget-id="409174727517683712">Tweets by @ITparamadina</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+				</div>
 			</div><!-- .col-md-4 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
