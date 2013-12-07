@@ -181,3 +181,61 @@ a.top-login-link:hover {
 .twitter-widget{
 	margin-top: 10px;
 }
+
+#gadgets-toggle {
+	background-image: url(img/gadget-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.toggle-category {
+	background-color: #ececec;
+}
+
+#socmed-toggle {
+	background-image: url(img/socmed-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#ite-toggle {
+	background-image: url(img/ite-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#security-toggle {
+	background-image: url(img/security-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#app-toggle {
+	background-image: url(img/app-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#opini-toggle {
+	background-image: url(img/opini-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}

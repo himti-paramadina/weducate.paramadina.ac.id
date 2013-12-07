@@ -18,11 +18,7 @@ get_header(); ?>
 			
 						<?php upbootwp_content_nav( 'nav-below' ); ?>
 			
-						<?php
-							// If comments are open or we have at least one comment, load up the comment template
-							if ( comments_open() || '0' != get_comments_number() )
-								comments_template();
-						?>
+						
 			
 					<?php endwhile; // end of the loop. ?>
 			
@@ -33,13 +29,42 @@ get_header(); ?>
 			<div class="col-md-3">
 					<div class="bg-white">
 					<div class="toggle-category">
+						<a href="#" id="gadgets-toggle"></a>
+						<div id="gadgets-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
+
+						<a href="#" id="socmed-toggle"></a>
+						<div id="socmed-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
+
+						<a href="#" id="ite-toggle"></a>
+						<div id="ite-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
+
+						<a href="#" id="security-toggle"></a>
+						<div id="security-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
+
+						<a href="#" id="app-toggle"></a>
+						<div id="app-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
+
+						<a href="#" id="opini-toggle"></a>
+						<div id="opini-toggle-content" style="display: none;">
+							<h1>Our Gadgets Toggle Content</h1>
+						</div>
 
 					</div>
 
-					<div class="subscribe-widget">
+					<div class="subscribe-widget" style="margin: 10px 0 0 0;">
 						<div class="subscribe">
-							<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe">
-							<button type="button" class="btn btn-warning btn-subscribe">SUBSCRIBE US</button>
+							<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 239px;">
+							<button type="button" class="btn btn-warning btn-subscribe" style="width: 241px;">SUBSCRIBE US</button>
 						</div>
 					</div>
 
