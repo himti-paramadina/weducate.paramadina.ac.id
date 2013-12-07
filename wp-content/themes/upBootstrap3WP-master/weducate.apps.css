@@ -177,3 +177,7 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 	border-top: solid 2px #ebebeb;
 }
+
+.twitter-widget{
+	margin-top: 10px;
+}
