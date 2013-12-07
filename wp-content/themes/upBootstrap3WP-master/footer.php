@@ -69,6 +69,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/wowslider.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/script.js"></script>
 </body>
 </html>

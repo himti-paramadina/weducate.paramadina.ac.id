@@ -21,6 +21,12 @@
 
 <?php wp_head(); ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/weducate.apps.css">
+
+	<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/engine_slider1/style.css" />
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	
 </head>
 
 <body <?php body_class(); ?>>
