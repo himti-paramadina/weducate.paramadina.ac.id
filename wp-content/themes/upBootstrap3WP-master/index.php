@@ -18,11 +18,34 @@ get_header(); ?>
 		<div class="slider">
 			<div class="row">
 				<div class="col-md-9">
-					<div class="category bg-white">
-
-					</div>
+					
+						<div id="wowslider-container1">
+							<div class="ws_images"><ul>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/hydrangeas.jpg" alt="Hydrangeas" title="Hydrangeas" id="wows1_0"/></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/jellyfish.jpg" alt="Jellyfish" title="Jellyfish" id="wows1_1"/>image 2</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/koala.jpg" alt="Koala" title="Koala" id="wows1_2"/>image3</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/lighthouse.jpg" alt="Lighthouse" title="Lighthouse" id="wows1_3"/>image 4</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/penguins.jpg" alt="Penguins" title="Penguins" id="wows1_4"/>image 5</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/tulips.jpg" alt="Tulips" title="Tulips" id="wows1_5"/></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/chrysanthemum.jpg" alt="Chrysanthemum" title="Chrysanthemum" id="wows1_6"/></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/desert.jpg" alt="Desert" title="Desert" id="wows1_7"/></li>
+								</ul>
+							</div>
+							<div class="ws_thumbs">
+								<div>
+									<a href="#" title="Hydrangeas"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/hydrangeas.jpg" alt="" /></a>
+									<a href="#" title="Jellyfish"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/jellyfish.jpg" alt="" /></a>
+									<a href="#" title="Koala"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/koala.jpg" alt="" /></a>
+									<a href="#" title="Lighthouse"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/lighthouse.jpg" alt="" /></a>
+									<a href="#" title="Penguins"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/penguins.jpg" alt="" /></a>
+									<a href="#" title="Tulips"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/tulips.jpg" alt="" /></a>
+									<a href="#" title="Chrysanthemum"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/chrysanthemum.jpg" alt="" /></a>
+									<a href="#" title="Desert"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/desert.jpg" alt="" /></a>
+								</div>
+							</div>
+						</div>
+					
 				</div>
-
 				<div class="col-md-3">
 					<div class="bg-white">
 						<div class="subscribe-widget">
