@@ -39,6 +39,35 @@
 	padding: 10px 50px 10px 50px;
 }
 
+.contact-us-title {
+	font-size: 12pt;
+	background-color: #09a1da;
+	margin-right: 34%;
+	padding: 5px 20px;
+}
+
+.contact-us-form {
+	margin: 10px;
+	font: 14pt;
+}
+
+.width-form {
+	with:200px;
+}
+
+
+.contact-us-title p {
+	color: #ffffff;
+}
+
+.personal-team {
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+
+}
+
 .bg-white {
 	background-color: #ffffff !important;
 }
