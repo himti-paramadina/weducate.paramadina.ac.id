@@ -105,7 +105,8 @@ get_header(); ?>
 								<p>
 									Buatlah tulisan dan pengalaman yang berkaitan dengan perkembangan teknologi untuk berbagi dengan orang banyak.
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BUAT TULISAN</button>
+								<!-- <button type="button" class="btn btn-primary btn-category">BUAT TULISAN</button> -->
+								<a href="http://localhost/weducate/wp-admin/" class="btn btn-primary btn-category">BUAT TULISAN</a>
 							</center>
 				 	</div>
 				</div>
@@ -118,7 +119,7 @@ get_header(); ?>
 								<p>
 									Bergabunglah dengan komunitas dari berbagai tempat untuk membahas topik-topik terkini mengenai teknologi informasi.
 								</p>
-								<button type="button" class="btn btn-primary btn-category">IKUT DISKUSI</button>
+								<a href="http://localhost/weducate/?page_id=8" class="btn btn-primary btn-category">IKUT DISKUSI</a>
 							</center>
 				 	</div>
 				</div>

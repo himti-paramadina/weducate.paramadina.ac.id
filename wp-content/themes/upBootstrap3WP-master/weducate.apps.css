@@ -220,6 +220,14 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#gadgets-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#gadgets-toggle-content a {
+	color: #000000;
+}
+
 .toggle-category {
 	background-color: #ececec;
 }
@@ -233,6 +241,14 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#socmed-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#socmed-toggle-content a {
+	color: #000000;
+}
+
 #ite-toggle {
 	background-image: url(img/ite-toggle.png);
 	height: 40px;
@@ -240,6 +256,14 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;	
+}
+
+#ite-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#ite-toggle-content a {
+	color: #000000;
 }
 
 #security-toggle {
@@ -251,6 +275,14 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#security-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#security-toggle-content a {
+	color: #000000;
+}
+
 #app-toggle {
 	background-image: url(img/app-toggle.png);
 	height: 40px;
@@ -258,6 +290,14 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;	
+}
+
+#app-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#app-toggle-content a {
+	color: #000000;
 }
 
 #opini-toggle {
@@ -268,3 +308,12 @@ a.top-login-link:hover {
 	background-position: center center;
 	background-repeat: no-repeat;	
 }
+
+#opini-toggle-content {
+	padding: 0 10px 0 20px;
+}
+
+#opini-toggle-content a {
+	color: #000000;
+}
+

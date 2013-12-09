@@ -31,32 +31,62 @@ get_header(); ?>
 					<div class="toggle-category">
 						<a href="#" id="gadgets-toggle"></a>
 						<div id="gadgets-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 						<a href="#" id="socmed-toggle"></a>
 						<div id="socmed-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 						<a href="#" id="ite-toggle"></a>
 						<div id="ite-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 						<a href="#" id="security-toggle"></a>
 						<div id="security-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 						<a href="#" id="app-toggle"></a>
 						<div id="app-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 						<a href="#" id="opini-toggle"></a>
 						<div id="opini-toggle-content" style="display: none;">
-							<h1>Our Gadgets Toggle Content</h1>
+							<a href="#">Fenomena Baru: Gadget Holic</a><br>
+							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
+							<a href="#">Menilik Konflik Hak Paten</a><br>
+							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
+							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
+							<a href="#">Developer Mobile Twitter yang kian Maju</a>
 						</div>
 
 					</div>
