@@ -232,6 +232,11 @@ a.top-login-link:hover {
 	background-color: #ececec;
 }
 
+.title-toggle-category {
+	text-align: center;
+	padding-top: 1px;
+}
+
 #socmed-toggle {
 	background-image: url(img/socmed-toggle.png);
 	height: 40px;
@@ -317,3 +322,65 @@ a.top-login-link:hover {
 	color: #000000;
 }
 
+.gadgets-link {
+	background-image: url(img/gadget-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.gadgets-link:hover {
+	background-image: url(img/gadget-toggle-selected.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.socmed-link {
+	background-image: url(img/socmed-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.ite-link {
+	background-image: url(img/ite-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.security-link {
+	background-image: url(img/security-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.app-link {
+	background-image: url(img/app-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.opini-link {
+	background-image: url(img/opini-toggle.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

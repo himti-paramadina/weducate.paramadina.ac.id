@@ -40,7 +40,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=21" class="btn btn-primary btn-category">BACA</a>								
 							</center>
 						</div>						
 					</div>
@@ -55,7 +55,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=24" class="btn btn-primary btn-category">BACA</a>
 							</center>
 						</div>
 					</div>
@@ -70,7 +70,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=27" class="btn btn-primary btn-category">BACA</a>
 							</center>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=30" class="btn btn-primary btn-category">BACA</a>
 							</center>
 
 						</div>
@@ -105,7 +105,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=33" class="btn btn-primary btn-category">BACA</a>
 							</center>
 						</div>
 					</div>
@@ -118,7 +118,7 @@ get_header(); ?>
 								<p>
 									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 								</p>
-								<button type="button" class="btn btn-primary btn-category">BACA</button>
+								<a href="http://localhost/weducate/?page_id=36" class="btn btn-primary btn-category">BACA</a>
 							</center>
 						</div>
 					</div>	

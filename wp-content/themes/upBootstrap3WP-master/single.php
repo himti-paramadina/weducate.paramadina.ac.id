@@ -27,8 +27,12 @@ get_header(); ?>
 			</div><!-- .col-md-8 -->
 			
 			<div class="col-md-3">
-					<div class="bg-white">
+				<div class="bg-white">
 					<div class="toggle-category">
+						<div class="title-toggle-category">
+							<h3>KATEGORI</h3>
+						</div>
+						<div style="border-bottom: 2px solid; border-color: white;"></div>
 						<a href="#" id="gadgets-toggle"></a>
 						<div id="gadgets-toggle-content" style="display: none;">
 							<a href="#">Fenomena Baru: Gadget Holic</a><br>
