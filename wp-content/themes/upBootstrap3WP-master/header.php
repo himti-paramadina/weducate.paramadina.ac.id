@@ -34,7 +34,18 @@
 	<?php do_action( 'before' ); ?>
 	
 		<div style="height: 41px; background-color: #444345;">
-			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span>   Log In</a></p>
+			<?php
+				if (!is_user_logged_in()):
+			?>
+			<p align="right"><a href="#" data-toggle="modal" data-target="#login-form" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Log In</a></p>
+			<?php
+				else: 
+					$current_user = wp_get_current_user();
+			?>
+			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Hi <strong><?php echo $current_user->display_name ?></strong>!</a></p>
+			<?php
+				endif;
+			?>
 		</div>
 		
 		<div style="background-color: #09a1da; height: 155px;">

@@ -61,7 +61,7 @@
         	<div class="footer">
         		<div class="container">
         			<div class="row">
-	            		<p>@ weducate 2013 | Privasi & aturan | Term of service</p>            
+	            		<p>&copy; weducate 2013 | Privasi & aturan | Term of service</p>            
 	            	</div>
         		</div>
             </div>
@@ -73,5 +73,37 @@
 <?php wp_footer(); ?>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/wowslider.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/script.js"></script>
+
+    <!-- Modal Forms -->
+    <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="loginform" id="loginform" action="http://localhost/weducate/wp-login.php" method="post">
+                        <p>
+                            <label for="user_login">Username<br>
+                            <input type="text" name="log" id="user_login" class="input" value="" size="20"></label>
+                        </p>
+                        <p>
+                            <label for="user_pass">Password<br>
+                            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"></label>
+                        </p>
+                            <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+                        <p class="submit">
+                            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
+                            <input type="hidden" name="redirect_to" value="http://localhost/weducate/wp-admin/">
+                            <input type="hidden" name="testcookie" value="1">
+                        </p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </body>
 </html>
