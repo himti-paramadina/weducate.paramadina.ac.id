@@ -48,11 +48,12 @@
 
 .contact-us-form {
 	margin: 10px;
-	font: 14pt;
+	font: 16pt;
+
 }
 
 .width-form {
-	with:200px;
+	width:270px;
 }
 
 
@@ -383,4 +384,8 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+#content {
+	padding-top: 0;
 }
