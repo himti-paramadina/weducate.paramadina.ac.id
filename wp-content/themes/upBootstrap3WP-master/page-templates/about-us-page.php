@@ -216,158 +216,68 @@ get_header(); ?>
 
 
 				<a href="#" id="our-team-toggle"></a>
-				<div id="our-team" style="display: none;">
-						<div class="row" style="margin-bottom: 20px;">
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-									
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div id="our-team">
+					<div class="row">
+						<?php 
+							$user_query = new WP_User_Query(array('role' => 'Administrator'));
 
-						<div class="row" style="margin-bottom: 20px;">
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-									<p><center>Nama</p>
-									<p><center>As Founder</p>
-									<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-									<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-						</div>
+							// print_r($user_query);
+							// die();
+						?>
 
+						<?php 
+							$count = 0;
+							foreach ($user_query->results as $user): 
+								$count++;
+						?>
+						<div class="col-md-2" style="margin-top: 20px;">
+							<a href="#" style="clear: both; margin: 0 auto 0 auto; width: 80px; height: 80px; display: block; border-radius: 80px; -webkit-border-radius: 80px; -moz-border-radius: 80px; background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
+
+							<p align="center"><?php echo $user->display_name; ?></p>
+							<p align="center">As Founder</p>
+							<p align="center">
+
+							<?php
+								/* Get Gravatar Profile */
+
+								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
+								$profile = unserialize($str);
+								if (is_array($profile) && isset( $profile['entry'])):
+									foreach ($profile['entry'][0]['accounts'] as $account):
+										if ($account['domain'] == "facebook.com"):
+							?>
+								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
+							<?php
+										endif;
+
+										if ($account['domain'] == "twitter.com"):
+							?>
+								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
+							<?php
+								 		endif;
+					 		?>
+
+					 		<?php
+					 					if ($account['domain'] == "google.com"):
+					 		?>
+								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
+							<?php
+										endif;
+									endforeach;
+								endif;
+							?>
+
+								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
+
+							</p>
+						</div>							
+						<?php
+								if ($count % 6 == 0) echo "</div><div class=\"row\">";
+							endforeach; 
+						?>
+
+					</div>
+					<div style="height: 20px; display: block; clear: both; width: 100%;"></div>
 				</div>
 
 				<a href="#" id="contributors-toggle"></a>
