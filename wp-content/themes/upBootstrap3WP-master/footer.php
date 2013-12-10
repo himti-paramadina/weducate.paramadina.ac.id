@@ -48,12 +48,10 @@
             				<h4>Credits</h4>
             			</div>
             			<div class="content-before-footer">
-	            			<p>
-	            				Prodi Teknik Informatika</br>
-	            				Universitas Paramadina</br>
-	            				Copyright Weducate</br>
-	            				Powered by Wordpress
-	            			</p>
+	            			<a href="https://www.paramadina.ac.id/index.php?option=com_content&view=category&layout=blog&id=47&Itemid=121&lang=en">Prodi Teknik Informatika</a><br>
+	            			<a href="https://www.paramadina.ac.id/">Universitas Paramadina</a><br>
+	            			<a href="#">Copyright Weducate</a><br>
+	            			<a href="http://wordpress.org/">Powered by Wordpress</a>	            			
             			</div>
             		</div>
             	</div>
