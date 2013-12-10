@@ -32,40 +32,44 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header container" role="banner">
+	
 		<div style="height: 41px; background-color: #444345;">
 			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span>   Log In</a></p>
 		</div>
-		<nav class="navbar navbar-default" role="navigation">
 		
+		<div style="background-color: #09a1da; height: 155px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-				        <div class="navbar-header">
-				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-							</button>
-				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="<?php echo get_template_directory_uri() ?>/img/logo.png"/></a>
-				            
-				        </div>
-						
-						<?php 
-						$args = array('theme_location' => 'primary', 
-									  'container_class' => 'navbar-collapse collapse', 
-									  'menu_class' => 'nav navbar-nav',
-									  'fallback_cb' => '',
-			                          'menu_id' => 'main-menu',
-			                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
-						wp_nav_menu($args);
-						?>
-					</div><!-- .col-md-12 -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</nav>
+						<nav class="navbar navbar-default" role="navigation">			
+					        <div class="navbar-header">
+					            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+								</button>
+					            
+					            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><img src="<?php echo get_template_directory_uri() ?>/img/logo.png"/></a>
+					            
+					        </div>
+							
+							<?php 
+							$args = array('theme_location' => 'primary', 
+										  'container_class' => 'navbar-collapse collapse', 
+										  'menu_class' => 'nav navbar-nav',
+										  'fallback_cb' => '',
+				                          'menu_id' => 'main-menu',
+				                          'walker' => new Upbootwp_Walker_Nav_Menu()); 
+							wp_nav_menu($args);
+							?>
+				
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-	</header><!-- #masthead -->
+		
+	
 
 	<div id="content" class="site-content">
