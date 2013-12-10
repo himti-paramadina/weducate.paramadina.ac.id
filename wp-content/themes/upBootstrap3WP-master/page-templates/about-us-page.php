@@ -8,26 +8,12 @@
  */
 get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				
-				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
 				<header class="entry-header page-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
-				
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php endwhile; // end of the loop. ?>
-					<?php
-						wp_link_pages(array(
-							'before' => '<div class="page-links">'.__('Pages:', 'upbootwp'),
-							'after'  => '</div>',
-						));
-					?>
-				</div><!-- .entry-content -->
 
 		<div class="row">
 			<div class="col-md-9">
@@ -69,19 +55,28 @@ get_header(); ?>
 							</div>
 
 							<div class="contact-us-form">
+								
 								<form action="https://docs.google.com/forms/d/12H1cNVND3uewYdvgn3ynnBdzztzAdj23T8vRHPXoJl4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 									<ol style="padding-left: 0">
+										<table>
 										<div class="ss-form-question errorbox-good">
 											<div dir="ltr" class="ss-item ss-item-required ss-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_1589006728">
-														<div class="ss-q-title">Nama
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
-														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+														<tr>
+															<td>
+																<div class="ss-q-title">Nama
+																	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																	<span class="ss-required-asterisk">*</span>
+																</div>		
+															</td>
+															<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 													</label>
-													<input type="text" class="width-form" name="entry.1589006728" value="" class="ss-q-short" id="entry_1589006728" dir="auto" aria-label="Nama  " aria-required="true" required="" title="">
+															<td>:</td>
+															<td>
+																<input type="text" class="width-form" name="entry.1589006728" value="" class="ss-q-short" id="entry_1589006728" dir="auto" aria-label="Nama  " aria-required="true" required="" title="">
+															</td>
+														</tr>
 													<div class="error-message"></div>
 												</div>
 											</div>
@@ -91,13 +86,20 @@ get_header(); ?>
 											<div dir="ltr" class="ss-item ss-item-required ss-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_95797113">
-														<div class=	"ss-q-title">Email
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
+													<tr>
+														<td>
+															<div class=	"ss-q-title">Email
+																<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																<span class="ss-required-asterisk">*</span>
+															</div>
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 													</label>
-													<input type="email" name="entry.95797113" value="" class="ss-q-short" id="entry_95797113" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
+														<td>:</td>
+														<td>
+															<input type="email" name="entry.95797113" value="" class="ss-q-short" id="entry_95797113" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
+														</td>
+													</tr>		
 												</div>
 											</div>
 										</div> 
@@ -106,10 +108,17 @@ get_header(); ?>
 											<div dir="ltr" class="ss-item  ss-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_344064089">
-														<div class="ss-q-title">Telepon</div>
+													<tr>
+														<td>
+															<div class="ss-q-title">Telepon</div>
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-													</label>
-													<input type="text" name="entry.344064089" value="" class="ss-q-short" id="entry_344064089" dir="auto" aria-label="Telepon  " title="">
+															</label>
+														<td>:</td>
+														<td>
+															<input type="text" name="entry.344064089" value="" class="ss-q-short" id="entry_344064089" dir="auto" aria-label="Telepon  " title="">
+														</td>
+													</tr>		
 													<div class="error-message"></div>
 												</div>
 											</div>
@@ -119,39 +128,55 @@ get_header(); ?>
 											<div dir="ltr" class="ss-item ss-item-required ss-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_815946917">
-														<div class="ss-q-title">Institusi
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
+													<tr>
+														<td>
+															<div class="ss-q-title">Institusi
+																<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																<span class="ss-required-asterisk">*</span>
+															</div>	
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-													</label>
-													<input type="text" name="entry.815946917" value="" class="ss-q-short" id="entry_815946917" dir="auto" aria-label="Institusi  " aria-required="true" required="" title="">
+														</label>
+														<td>:</td>
+														<td>
+															<input type="text" name="entry.815946917" value="" class="ss-q-short" id="entry_815946917" 	dir="auto" aria-label="Institusi  " aria-required="true" required="" title="">
+														</td>
+													</tr>
 													<div class="error-message"></div>
 												</div>
 											</div>
 										</div>
+										</table>
 							</div>
 						</div>
 					
 						<div class="col-md-6">
 							<div class="contact-us-form">
+										<table>
 										<div class="ss-form-question errorbox-good">
 											<div dir="ltr" class="ss-item ss-item-required ss-select">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_341812938">
-														<div class="ss-q-title">Tipe Pertanyaan
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
+													<tr>
+														<td>
+															<div class="ss-q-title">Tipe Pertanyaan
+																<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																<span class="ss-required-asterisk">*</span>
+															</div>
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-													</label>
-
-													<select name="entry.341812938" id="entry_341812938" aria-label="Tipe Pertanyaan  " aria-	required="true" required="">
-														<option value=""></option>
-														<option value="Kontribusi">Kontribusi</option> 
-														<option value="Lokasi">Lokasi</option>
-														<option value="Lain-lain">Lain-lain</option>
-													</select>
+														</label>
+														<td>:</td>
+														<td>
+															<select name="entry.341812938" id="entry_341812938" aria-label="Tipe Pertanyaan  " aria-	required="true" required="">
+																<option value=""></option>
+																<option value="Kontribusi">Kontribusi</option> 
+																<option value="Lokasi">Lokasi</option>
+																<option value="Lain-lain">Lain-lain</option>
+															</select>
+														</td>
+													</tr>
+										
 												</div>
 											</div>
 										</div> 
@@ -160,14 +185,21 @@ get_header(); ?>
 											<div dir="ltr" class="ss-item ss-item-required ss-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_1945101671">
-														<div class="ss-q-title">Subyek
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
+													<tr>
+														<td>
+															<div class="ss-q-title">Subyek
+																<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																<span class="ss-required-asterisk">*</span>
+															</div>
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-													</label>
-
-													<input type="text" name="entry.1945101671" value="" class="ss-q-short" id="		entry_1945101671" dir="auto" aria-label="Subyek  " aria-required="true" required="" title="">
+														</label>
+														<td>:</td>
+														<td>
+															<input type="text" name="entry.1945101671" value="" class="ss-q-short" id="		entry_1945101671" dir="auto" aria-label="Subyek  " aria-required="true" required="" title="">
+														</td>
+													</tr>
+						
 													<div class="error-message"></div>
 												</div>
 											</div>
@@ -177,15 +209,21 @@ get_header(); ?>
 											<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text">
 												<div class="ss-form-entry">
 													<label aria-hidden class="ss-q-item-label aria-todo" for="entry_1037057138">
-														<div class="ss-q-title">Pertanyaan
-															<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-															<span class="ss-required-asterisk">*</span>
-														</div>
+													<tr>
+														<td>
+															<div class="ss-q-title">Pertanyaan
+																<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+																<span class="ss-required-asterisk">*</span>
+															</div>
+														</td>
 														<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-													</label>
-
-													<textarea name="entry.1037057138" rows="8" cols="0" class="ss-q-long" id="entry_1037057138" dir="auto" aria-label="Pertanyaan  " aria-required="true" required="">
-													</textarea>
+														</label>
+														<td>:</td>
+														<td>
+															<textarea name="entry.1037057138" rows="8" cols="0" class="ss-q-long" id="entry_1037057138" dir="auto" aria-label="Pertanyaan  " aria-required="true" required=""></textarea>
+														</td>
+													</tr>
+													
 													<div class="error-message"></div>
 												</div>
 											</div>
@@ -209,6 +247,7 @@ get_header(); ?>
 										</div>
 									</ol>
 								</form>
+								</table>
 							</div>
 						</div>
 					</div>	
