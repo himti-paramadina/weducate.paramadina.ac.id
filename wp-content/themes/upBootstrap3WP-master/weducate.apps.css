@@ -384,3 +384,7 @@ a.top-login-link:hover {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+
+#content {
+	padding-top: 0;
+}
