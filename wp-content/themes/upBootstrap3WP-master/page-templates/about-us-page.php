@@ -259,9 +259,6 @@ get_header(); ?>
 					<div class="row">
 						<?php 
 							$user_query = new WP_User_Query(array('role' => 'Administrator'));
-
-							// print_r($user_query);
-							// die();
 						?>
 
 						<?php 
@@ -270,7 +267,7 @@ get_header(); ?>
 								$count++;
 						?>
 						<div class="col-md-2" style="margin-top: 20px;">
-							<a href="#" style="clear: both; margin: 0 auto 0 auto; width: 80px; height: 80px; display: block; border-radius: 80px; -webkit-border-radius: 80px; -moz-border-radius: 80px; background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
+							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
 
 							<p align="center"><?php echo $user->display_name; ?></p>
 							<p align="center">As Founder</p>
@@ -285,13 +282,13 @@ get_header(); ?>
 									foreach ($profile['entry'][0]['accounts'] as $account):
 										if ($account['domain'] == "facebook.com"):
 							?>
-								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
 							<?php
 										endif;
 
 										if ($account['domain'] == "twitter.com"):
 							?>
-								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
 							<?php
 								 		endif;
 					 		?>
@@ -299,7 +296,7 @@ get_header(); ?>
 					 		<?php
 					 					if ($account['domain'] == "google.com"):
 					 		?>
-								<a href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
 							<?php
 										endif;
 									endforeach;

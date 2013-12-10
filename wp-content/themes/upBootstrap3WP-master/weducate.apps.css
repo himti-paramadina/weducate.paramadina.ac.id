@@ -65,12 +65,15 @@
 	color: #ffffff;
 }
 
-.personal-team {
-	padding-left: 20px;
-	margin-top: 20px;
-	margin-left: 40px;
-	margin-bottom: 20px;
-
+.team-avatar {
+	clear: both; 
+	margin: 0 auto 10px auto; 
+	width: 80px; 
+	height: 80px; 
+	display: block; 
+	border-radius: 80px; 
+	-webkit-border-radius: 80px; 
+	-moz-border-radius: 80px; 
 }
 
 .bg-white {
