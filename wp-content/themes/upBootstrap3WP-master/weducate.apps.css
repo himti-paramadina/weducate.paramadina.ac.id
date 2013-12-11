@@ -160,6 +160,16 @@ a.top-login-link:hover {
 	border-color: #26a1d3 !important;
 }
 
+.btn-submit {
+	width: 100px;
+	height: 30px;
+	background-color: #26a1d3 !important;
+	border-color: #fff !important;
+	margin-left: 300px;
+	color: #fff !important;
+	font-family: 'Open Sans', arial;
+}
+
 /* Overridden Bootstrap Styles */
 
 .navbar {
