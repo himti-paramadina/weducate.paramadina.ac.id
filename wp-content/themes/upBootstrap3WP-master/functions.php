@@ -117,6 +117,14 @@ require get_template_directory().'/inc/customizer.php';
 require get_template_directory().'/inc/jetpack.php';
 
 
+
+// Replaces the excerpt "more" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read More..</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 /**
  * upbootwp_breadcrumbs function.
  * Edit the standart breadcrumbs to fit the bootstrap style without producing more css
