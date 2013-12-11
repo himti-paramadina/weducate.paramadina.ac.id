@@ -15,10 +15,39 @@ get_header(); ?>
 				
 				
 				<header class="entry-header page-header">
+					<?php
+						$current_page = get_post(get_the_ID());
+					?>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
 				
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+				<?php
+					$query = new WP_Query('posts_per_page=10&category_name=' . substr($current_page->post_name, 9, strlen($current_page->post_name)));
+
+					while ($query->have_posts()):
+						$query->the_post();
+				?>	
+				<div class="row">
+					<div class="col-md-3">
+						<?php 
+							if ( has_post_thumbnail() ) {
+								$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+						?>
+						<img src="<?php echo $img_url ?>" class="img-responsive" />
+						<?php
+							} 
+						?>
+					</div>
+					<div class="col-md-9">
+						<h4><?php the_title(); ?></h4>
+						<?php 
+							the_excerpt();
+						?>
+					</div>
+				</div>
+				<?php
+					endwhile;
+				?>
 	
 			</div><!-- .col-md-9 -->
 			<div class="col-md-3">
@@ -30,12 +59,12 @@ get_header(); ?>
 					
 					<div style="border-bottom: 2px solid; border-color: white; margin: 0 10px 10px 10px;"></div>
 					
-					<a href="http://localhost/weducate/?page_id=21" class="gadgets-link"></a>
-					<a href="http://localhost/weducate/?page_id=24" class="socmed-link"></a>
-					<a href="http://localhost/weducate/?page_id=27" class="ite-link"></a>
-					<a href="http://localhost/weducate/?page_id=30" class="security-link"></a>
-					<a href="http://localhost/weducate/?page_id=33" class="app-link"></a>
-					<a href="http://localhost/weducate/?page_id=36" class="opini-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=21" class="gadgets-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=24" class="socmed-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=27" class="ite-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=30" class="security-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=33" class="app-link"></a>
+					<a href="<?php bloginfo('url') ?>/?page_id=36" class="opini-link"></a>
 				</div>
 
 				<div class="twitter-widget">

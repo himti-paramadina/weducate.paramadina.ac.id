@@ -38,7 +38,8 @@ get_header(); ?>
 
 						$count = 0;
 						foreach ($categories as $category):
-							$count++;
+							if ($category->slug != "uncategorized"):
+								$count++;
 					?>
 					<div class="col-md-4">
 						<div class="category">
@@ -46,11 +47,12 @@ get_header(); ?>
 							<center>
 								<h3><?php echo $category->name; ?></h3>
 								<p><?php echo $category->description; ?></p>
-								<a href="#" class="btn btn-primary btn-category">BACA</a>								
+								<a href="<?php echo bloginfo('url') . '/kategori-' . $category->slug?>" class="btn btn-primary btn-category">BACA</a>								
 							</center>
 						</div>						
 					</div>
 					<?php
+							endif;
 
 							if ($count % 3 == 0):
 					?>
