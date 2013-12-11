@@ -55,7 +55,6 @@ get_header(); ?>
 							</div>
 
 							<div class="contact-us-form">
-								
 								<form action="https://docs.google.com/forms/d/12H1cNVND3uewYdvgn3ynnBdzztzAdj23T8vRHPXoJl4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 									<ol style="padding-left: 0">
 										<table>
@@ -281,6 +280,7 @@ get_header(); ?>
 								
 								/* Get Gravatar Profile */
 
+								/*
 								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
 								$profile = unserialize($str);
 
@@ -308,21 +308,25 @@ get_header(); ?>
 											endif;
 										endforeach;
 									endif;
-							?>
+
+								endif;
+								*/
+								?>
 
 								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
 
 							</p>
-						</div>							
-						<?php
-								endif;
+						</div>	
 
-								if ($count % 6 == 0) echo "</div><div class=\"row\">";
+								<?php
+									if ($count % 6 == 0) echo "</div><div class=\"row\">";
 							
 								endif;
+
+
 							endforeach; 
 
-
+						
 						?>
 
 					</div>
@@ -331,81 +335,81 @@ get_header(); ?>
 
 				<a href="#" id="contributors-toggle"></a>
 				<div id="contributors" style="display: none;">
-					<div class="row" style="margin-bottom: 20px;">
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-									
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="personal-team">
-									<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/our-team-icon.png"/>
-										<p><center>Nama</p>
-										<p><center>As Founder</p>
-										<img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/>
-										<img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="row">
+						<?php 
+							$user_query = new WP_User_Query(array('role' => 'Administrator'));
+						?>
+
+						<?php 
+							$count = 0;
+							foreach ($user_query->results as $user):
+								$count++;
+
+								if ($user->display_name == "weducate"):
+									// Skip!
+								else:
+						?>
+						<div class="col-md-2" style="margin-top: 20px;">
+							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
+
+							<p align="center"><?php echo $user->display_name; ?></p>
+							<p align="center">As Founder</p>
+							<p align="center">
+
+							<?php
+								
+								/* Get Gravatar Profile */
+
+								/*
+								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
+								$profile = unserialize($str);
+
+								if (is_array($profile) && isset( $profile['entry'])):
+									if (count($profile['entry'][0]['accounts']) > 0):
+										foreach ($profile['entry'][0]['accounts'] as $account):
+											if ($account['domain'] == "facebook.com"):
+							?>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
+							<?php
+											endif;
+
+											if ($account['domain'] == "twitter.com"):
+							?>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
+							<?php
+								 			endif;
+					 		?>
+
+					 		<?php
+					 						if ($account['domain'] == "google.com"):
+					 		?>
+								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
+							<?php
+											endif;
+										endforeach;
+									endif;
+
+								endif;
+								*/
+								?>
+
+								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
+
+							</p>
+						</div>	
+
+								<?php
+									if ($count % 6 == 0) echo "</div><div class=\"row\">";
+							
+								endif;
+
+
+							endforeach; 
+
+						
+						?>
+
+					</div>
 				</div>
 
 			</div><!-- .col-md-12 -->
