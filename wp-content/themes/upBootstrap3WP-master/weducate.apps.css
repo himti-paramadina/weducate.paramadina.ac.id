@@ -4,7 +4,7 @@
 }
 
 .footer p {
-    color:white;
+    color: #ffffff !important;
     padding-top:7px;
     padding-right:38px;
     float:right;
@@ -16,6 +16,10 @@
 }
 
 .before-footer p {
+	color: #939393;
+}
+
+.before-footer a {
 	color: #939393;
 }
 
@@ -108,12 +112,15 @@
 
 }
 
-.personal-team {
-	padding-left: 20px;
-	margin-top: 20px;
-	margin-left: 40px;
-	margin-bottom: 20px;
-
+.team-avatar {
+	clear: both; 
+	margin: 0 auto 10px auto; 
+	width: 80px; 
+	height: 80px; 
+	display: block; 
+	border-radius: 80px; 
+	-webkit-border-radius: 80px; 
+	-moz-border-radius: 80px; 
 }
 
 .bg-white {
@@ -274,6 +281,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#gadgets-toggle:hover {
+	background-image: url(img/gadget-toggle-selected.png);
+}
+
 #gadgets-toggle-content {
 	padding: 0 10px 0 20px;
 }
@@ -300,6 +311,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#socmed-toggle:hover {
+	background-image: url(img/socmed-toggle-selected.png);
+}
+
 #socmed-toggle-content {
 	padding: 0 10px 0 20px;
 }
@@ -315,6 +330,10 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;	
+}
+
+#ite-toggle:hover {
+	background-image: url(img/ite-toggle-selected.png);
 }
 
 #ite-toggle-content {
@@ -334,6 +353,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#security-toggle:hover {
+	background-image: url(img/security-toggle-selected.png);
+}
+
 #security-toggle-content {
 	padding: 0 10px 0 20px;
 }
@@ -351,6 +374,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+#app-toggle:hover {
+	background-image: url(img/app-toggle-selected.png);
+}
+
 #app-toggle-content {
 	padding: 0 10px 0 20px;
 }
@@ -366,6 +393,16 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;	
+}
+
+#opini-toggle:hover {
+	background-image: url(img/opini-toggle-selected.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #d4d4d4;	
 }
 
 #opini-toggle-content {
@@ -386,12 +423,7 @@ a.top-login-link:hover {
 }
 
 .gadgets-link:hover {
-	background-image: url(img/gadget-toggle-selected.png);
-	height: 40px;
-	width: 100%;
-	display: block;
-	background-position: center center;
-	background-repeat: no-repeat;	
+	background-image: url(img/gadget-toggle-selected.png);	
 }
 
 .socmed-link {
@@ -403,6 +435,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
+.socmed-link:hover {
+	background-image: url(img/socmed-toggle-selected.png);
+}
+
 .ite-link {
 	background-image: url(img/ite-toggle.png);
 	height: 40px;
@@ -410,6 +446,10 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.ite-link:hover {
+	background-image: url(img/ite-toggle-selected.png);
 }
 
 .security-link {
@@ -421,6 +461,10 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
+.security-link:hover {
+	background-image: url(img/security-toggle-selected.png);	
+}
+
 .app-link {
 	background-image: url(img/app-toggle.png);
 	height: 40px;
@@ -428,6 +472,10 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.app-link:hover {
+	background-image: url(img/app-toggle-selected.png);
 }
 
 .opini-link {
@@ -439,6 +487,25 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
+.opini-link:hover {
+	background-image: url(img/opini-toggle-selected.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #d4d4d4;
+}
+
 #content {
 	padding-top: 0;
+}
+
+.modal-content {
+	background-color: #09A1DA;
+	text-align: center;
+}
+
+.label-form-login {
+	margin-top: 20px;
 }
