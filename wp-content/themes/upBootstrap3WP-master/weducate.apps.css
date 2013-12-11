@@ -399,7 +399,7 @@ a.top-login-link:hover {
 }
 
 .security-link:hover {
-	background-image: url(img/security-toggle-selected.png);
+	background-image: url(img/security-toggle-selected.png);	
 }
 
 .app-link {
@@ -422,6 +422,16 @@ a.top-login-link:hover {
 	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.opini-link:hover {
+	background-image: url(img/opini-toggle-selected.png);
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #d4d4d4;
 }
 
 #content {
