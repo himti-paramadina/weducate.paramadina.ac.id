@@ -107,8 +107,8 @@ get_header(); ?>
 
 				<div class="subscribe-widget" style="margin: 10px 0 0 0;">
 					<div class="subscribe">
-						<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 239px;">
-						<button type="button" class="btn btn-warning btn-subscribe" style="width: 241px;">SUBSCRIBE US</button>
+						<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 231px;">
+						<button type="button" class="btn btn-warning btn-subscribe" style="width: 231px;">SUBSCRIBE US</button>
 					</div>
 				</div>
 
