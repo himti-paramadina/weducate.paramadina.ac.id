@@ -26,20 +26,44 @@ get_header(); ?>
 					</div>
 					<div style="float:left;">
 						<p>Phone +6221 00 0011</p>
-						<p>Info@weducate.com</p>
+						<p>info@weducate.com</p>
 						<p>Jl. Gatot Subroto Kav. 97</p>
-					</div>
-					
-				
-
-				
+					</div>			
 				</div>
+
 				<div style="padding-bottom: 10px;">
-					<iframe width="263" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left">
+					<iframe width="263" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br />
+					<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left"></a>
 				</div>
 			</div>
 		</div>
 
+		<div class="row" style="padding: 30px 0 30px 0;">
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">Advisor & Lecturer</a>
+			</div>
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">Head of Development</a>
+			</div>
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">Content Management</a>
+			</div>
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">Front End Developer</a>
+			</div>
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">UI Designer</a>
+			</div>
+			<div class="col-md-2 team-profile">
+				<img src="http://placehold.it/195x195" class="img-responsive" />
+				<a href="#">Back End Developer</a>
+			</div>
+		</div>
 
 	
 				<a style="padding-bottom:10px"; href="#" id="contact-us-toggle"></a>

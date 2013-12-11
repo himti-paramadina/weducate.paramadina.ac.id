@@ -27,106 +27,44 @@ get_header(); ?>
 						));
 					?>
 				</div><!-- .entry-content -->
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 
 				<div class="row">
 
+					<?php
+						$categories = get_categories(array(
+							'type' => 'post',
+							'hide_empty' => 0
+						));
+
+						$count = 0;
+						foreach ($categories as $category):
+							$count++;
+					?>
 					<div class="col-md-4">
 						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-gadgets.png" /></center></p>
+							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-<?php echo $category->slug; ?>.png" /></center></p>
 							<center>
-								<h3>Gadget</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=21" class="btn btn-primary btn-category">BACA</a>								
+								<h3><?php echo $category->name; ?></h3>
+								<p><?php echo $category->description; ?></p>
+								<a href="#" class="btn btn-primary btn-category">BACA</a>								
 							</center>
 						</div>						
 					</div>
+					<?php
 
-
-
-					<div class="col-md-4">
-						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-socmed.png" /></center></p>
-							<center>
-								<h3>Social Media</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=24" class="btn btn-primary btn-category">BACA</a>
-							</center>
-						</div>
-					</div>
-
-
-
-					<div class="col-md-4">
-						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-UU_ITE.png" /></center></p>
-							<center>
-							<h3>UU ITE</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=27" class="btn btn-primary btn-category">BACA</a>
-							</center>
-						</div>
-					</div>
-
+							if ($count % 3 == 0):
+					?>
 				</div>
-
 				<div class="row">
 					<div class="line"></div>
 				</div>
-
 				<div class="row">
+					<?php
+							endif;
+						endforeach;
+					?>
+				</div>
 
-					<div class="col-md-4">
-						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-security.png" /></center></p>
-							<center>
-							<h3>Security</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=30" class="btn btn-primary btn-category">BACA</a>
-							</center>
-
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-app.png" /></center></p>
-							<center>
-							<h3>Apps & OS</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=33" class="btn btn-primary btn-category">BACA</a>
-							</center>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="category">
-							<p><center><img src="<?php echo get_template_directory_uri();?>/img/icon-opini.png" /></center></p>
-							<center>
-							<h3>Opini</h3>
-								<p>
-									Lorem ipsum dolor sit amet consectetuer a dipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-								</p>
-								<a href="http://localhost/weducate/?page_id=36" class="btn btn-primary btn-category">BACA</a>
-							</center>
-						</div>
-					</div>	
-
-				</div>				
-				
-
-	
-	
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- .container -->

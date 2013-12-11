@@ -123,6 +123,32 @@
 	-moz-border-radius: 80px; 
 }
 
+.team-profile {
+	padding: 0;
+	height: 195px;
+}
+
+.team-profile a {
+	font-family: 'Open Sans', arial;
+	font-size: 1em;
+	color: #ffffff;
+	height: 30px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	line-height: 30px;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	bottom: 30px;
+	text-decoration: none;
+}
+
+.team-profile a:hover {
+	background-color: #09A1DA;
+}
+
 .bg-white {
 	background-color: #ffffff !important;
 }
