@@ -19,28 +19,26 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-9">
 					
-						<div id="wowslider-container1">
+						<div id="wowslider-container5">
 							<div class="ws_images"><ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/hydrangeas.jpg" alt="Hydrangeas" title="Hydrangeas" id="wows1_0"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/jellyfish.jpg" alt="Jellyfish" title="Jellyfish" id="wows1_1"/>image 2</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/koala.jpg" alt="Koala" title="Koala" id="wows1_2"/>image3</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/lighthouse.jpg" alt="Lighthouse" title="Lighthouse" id="wows1_3"/>image 4</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/penguins.jpg" alt="Penguins" title="Penguins" id="wows1_4"/>image 5</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/tulips.jpg" alt="Tulips" title="Tulips" id="wows1_5"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/chrysanthemum.jpg" alt="Chrysanthemum" title="Chrysanthemum" id="wows1_6"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/desert.jpg" alt="Desert" title="Desert" id="wows1_7"/></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post1.png" alt="Post1" title="Post1"/>Post 1</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post2.png" alt="Post2" title="Post2" />Post 2</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post3.png" alt="Post3" title="Post3" />image3</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post4.png" alt="Post4" title="Post4" />image 4</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post5.png" alt="Post5" title="Post5" />image 5</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post6.png" />image 6</li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post7.png" />image 7</li>
 								</ul>
 							</div>
 							<div class="ws_thumbs">
 								<div>
-									<a href="#" title="Hydrangeas"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/hydrangeas.jpg" alt="" /></a>
-									<a href="#" title="Jellyfish"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/jellyfish.jpg" alt="" /></a>
-									<a href="#" title="Koala"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/koala.jpg" alt="" /></a>
-									<a href="#" title="Lighthouse"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/lighthouse.jpg" alt="" /></a>
-									<a href="#" title="Penguins"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/penguins.jpg" alt="" /></a>
-									<a href="#" title="Tulips"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/tulips.jpg" alt="" /></a>
-									<a href="#" title="Chrysanthemum"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/chrysanthemum.jpg" alt="" /></a>
-									<a href="#" title="Desert"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/desert.jpg" alt="" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post1.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post2.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post3.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post4.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post5.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post6.png" /></a>
+									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post7.png" /></a>
 								</div>
 							</div>
 						</div>
