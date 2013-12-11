@@ -11,11 +11,10 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-12">
 				<header class="entry-header page-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
-			</div>
+			
 
 			<div class="col-md-12 userdata">
 
@@ -68,17 +67,74 @@ get_header(); ?>
 
 			</div>	
 
-			<div class="col-md-12">
-				<header class="entry-header page-header">
-					<h1>Kontribusi Tulisanku</h1>
-				</header>
-				<div class="col-md-3">
+			
+
+				<div class="row">
+					<div class="col-md-12">
+						<header class="entry-header page-header">
+							<h1>Kontribusi Tulisan</h1>
+						</header>
+				</div>
+
+			<div class="row kontribusi">
+
+				<div class="row">
+
+						<div class="col-md-2">
+							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-1.png"/>
+						</div>
+						<div class="col-md-10">
+							<h4 style="font-weight: bold;">Menilik Konflik Hak Paten</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+						</div>
+				</div>	
+				
+
+				<div class="row">
+						<div class="col-md-2">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-2.png"/>
+						</div>
+						<div class="col-md-10">
+							<h4 style="font-weight: bold;">Pembajakan Software di Mata Hukum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+						</div>
 
 				</div>
-				<div class="col-md-9">
-				
+
+				<div class="row">
+						<div class="col-md-2">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-3.png"/>
+						</div>
+						<div class="col-md-10">
+							<h4 style="font-weight: bold;">Dampak Gadget pada Kepribadian</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+						</div>
+
+				</div>
+
+				<div class="row">
+						<div class="col-md-2">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-4.png"/>
+						</div>
+						<div class="col-md-10">
+							<h4 style="font-weight: bold;">Apa itu Multi-Tasking Gadget</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+						</div>
+
+				</div>
+
+				<div class="row">
+						<div class="col-md-2">
+							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-5.png"/>
+						</div>
+						<div class="col-md-10">
+							<h4 style="font-weight: bold;">Majunya Developer Mobile Apps Twitter</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+						</div>
+
 				</div>
 			</div>
+			
 		</div><!-- .row -->
 	</div><!-- .container -->
 <?php get_footer(); ?>
