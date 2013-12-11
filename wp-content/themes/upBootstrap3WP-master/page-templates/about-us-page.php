@@ -39,29 +39,35 @@ get_header(); ?>
 		</div>
 
 		<div class="row" style="padding: 30px 0 30px 0;">
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">Advisor & Lecturer</a>
-			</div>
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">Head of Development</a>
-			</div>
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">Content Management</a>
-			</div>
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">Front End Developer</a>
-			</div>
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">UI Designer</a>
-			</div>
-			<div class="col-md-2 team-profile">
-				<img src="http://placehold.it/195x195" class="img-responsive" />
-				<a href="#">Back End Developer</a>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">Advisor & Lecturer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">Head of Development</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">Content Management</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">Front End Developer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">UI Designer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img src="http://placehold.it/260x260" class="img-responsive" />
+						<a href="#">Back End Developer</a>
+					</div>
+				</div>
 			</div>
 		</div>
 

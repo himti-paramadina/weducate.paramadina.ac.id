@@ -125,23 +125,23 @@
 
 .team-profile {
 	padding: 0;
-	height: 195px;
+	height: 260px;
 }
 
 .team-profile a {
 	font-family: 'Open Sans', arial;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #ffffff;
-	height: 30px;
+	height: 40px;
 	background: rgba(0, 0, 0, 0.7);
 	text-align: center;
-	line-height: 30px;
+	line-height: 40px;
 	width: 100%;
 	position: relative;
 	margin: 0;
 	padding: 0;
 	display: block;
-	bottom: 30px;
+	bottom: 40px;
 	text-decoration: none;
 }
 
