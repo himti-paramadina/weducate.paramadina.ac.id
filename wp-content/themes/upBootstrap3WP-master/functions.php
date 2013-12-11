@@ -20,13 +20,14 @@ function upbootwp_setup() {
 	load_theme_textdomain('upbootwp', get_template_directory().'/languages');
 
 	add_theme_support( 'automatic-feed-links' );
+	
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),
