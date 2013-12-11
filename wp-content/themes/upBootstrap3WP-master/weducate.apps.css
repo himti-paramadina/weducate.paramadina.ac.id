@@ -551,8 +551,12 @@ a.top-login-link:hover {
 
 }
 
-
-
 table.data {
 	font-size: 16pt;
 }
+
+.kontribusi {
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
