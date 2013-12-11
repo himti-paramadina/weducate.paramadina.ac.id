@@ -18,8 +18,12 @@ get_header(); ?>
 			
 						<?php upbootwp_content_nav( 'nav-below' ); ?>
 			
-						
-			
+						<?php
+	                            // If comments are open or we have at least one comment, load up the comment template
+	                            if ( comments_open() || '0' != get_comments_number() )
+	                                    comments_template();
+	                    ?>
+
 					<?php endwhile; // end of the loop. ?>
 			
 					</main><!-- #main -->
@@ -97,8 +101,8 @@ get_header(); ?>
 
 					<div class="subscribe-widget" style="margin: 10px 0 0 0;">
 						<div class="subscribe">
-							<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 239px;">
-							<button type="button" class="btn btn-warning btn-subscribe" style="width: 241px;">SUBSCRIBE US</button>
+							<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 231px;">
+							<button type="button" class="btn btn-warning btn-subscribe" style="width: 231px;">SUBSCRIBE US</button>
 						</div>
 					</div>
 

@@ -8,26 +8,16 @@
  */
 get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
 				
-				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+				
 				<header class="entry-header page-header">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
 				
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php endwhile; // end of the loop. ?>
-					<?php
-						wp_link_pages(array(
-							'before' => '<div class="page-links">'.__('Pages:', 'upbootwp'),
-							'after'  => '</div>',
-						));
-					?>
-				</div><!-- .entry-content -->
 				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
 			</div><!-- .col-md-9 -->
@@ -55,8 +45,8 @@ get_header(); ?>
 
 				<div class="subscribe-widget" style="margin: 10px 0 0 0;">
 					<div class="subscribe">
-						<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 239px;">
-						<button type="button" class="btn btn-warning btn-subscribe" style="width: 241px;">SUBSCRIBE US</button>
+						<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe" style="width: 231px;">
+						<button type="button" class="btn btn-warning btn-subscribe" style="width: 231px;">SUBSCRIBE US</button>
 					</div>
 				</div>
 
