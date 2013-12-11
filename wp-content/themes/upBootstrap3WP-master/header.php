@@ -27,6 +27,12 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 	
+	<script type="text/javascript">
+		var SITE_THEME_URL = "<?php echo get_template_directory_uri(); ?>";
+
+		var gravatarAccounts = [];
+		var temporary = [];
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
