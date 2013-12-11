@@ -13,19 +13,21 @@ $("#contributors-toggle").click( function() {
 	$("#contributors").slideToggle( "slow", function() {});
 });
 
+/* Category Accordion */
+
 $("#gadgets-toggle").click(function(){
 	event.preventDefault();
 	$("#gadgets-toggle-content").slideToggle("slow", function(){});
 });
 
-$("#socmed-toggle").click(function(){
+$("#sosial-media-toggle").click(function(){
 	event.preventDefault();
-	$("#socmed-toggle-content").slideToggle("slow", function(){});
+	$("#sosial-media-toggle-content").slideToggle("slow", function(){});
 });
 
-$("#ite-toggle").click(function(){
+$("#uu-ite-toggle").click(function(){
 	event.preventDefault();
-	$("#ite-toggle-content").slideToggle("slow", function(){});
+	$("#uu-ite-toggle-content").slideToggle("slow", function(){});
 });
 
 $("#security-toggle").click(function(){
@@ -33,9 +35,9 @@ $("#security-toggle").click(function(){
 	$("#security-toggle-content").slideToggle("slow", function(){});
 });
 
-$("#app-toggle").click(function(){
+$("#apps-os-toggle").click(function(){
 	event.preventDefault();
-	$("#app-toggle-content").slideToggle("slow", function(){});
+	$("#apps-os-toggle-content").slideToggle("slow", function(){});
 });
 
 $("#opini-toggle").click(function(){

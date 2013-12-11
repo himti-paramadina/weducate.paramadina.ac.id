@@ -20,25 +20,66 @@ get_header(); ?>
 				<div class="col-md-9">
 					
 						<div id="wowslider-container5">
-							<div class="ws_images"><ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post1.png" alt="Post1" title="Post1"/>Post 1</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post2.png" alt="Post2" title="Post2" />Post 2</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post3.png" alt="Post3" title="Post3" />image3</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post4.png" alt="Post4" title="Post4" />image 4</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post5.png" alt="Post5" title="Post5" />image 5</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post6.png" />image 6</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/post7.png" />image 7</li>
+							<div class="ws_images">
+								<ul>
+							<?php
+								$the_query = new WP_Query( 'post_type=post&posts_per_page=6&orderby=date&order=DESC' );
+
+								// The Loop
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+								?>	
+									<li>
+									<?php
+									if ( has_post_thumbnail() ) {
+										?><a href="<?php echo the_permalink()?>">
+										<?php
+										the_post_thumbnail('full','title=');										
+										?>
+										</a>
+										<a href="<?php echo the_permalink()?>"  style="color:white;">
+										<?php
+										echo get_the_title();
+										?>
+										</a>
+										<?php
+									}
+									
+									?>
+								     
+									</li>
+								<?php	
+									
+								}
+								wp_reset_postdata();
+							?>
+								
 								</ul>
 							</div>
 							<div class="ws_thumbs">
 								<div>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post1.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post2.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post3.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post4.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post5.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post6.png" /></a>
-									<a href="#" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/post7.png" /></a>
+							<?php	
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+								?>	
+									<a href="#" title="">
+									<?php
+									if ( has_post_thumbnail() ) {
+										the_post_thumbnail(array(128, 48));
+									}
+									?>
+									</a>
+								<?php	
+									
+								}
+
+								/* Restore original Post Data 
+								 * NB: Because we are using new WP_Query we aren't stomping on the 
+								 * original $wp_query and it does not need to be reset.
+								*/
+								wp_reset_postdata();
+							?>
+									
 								</div>
 							</div>
 						</div>
@@ -63,12 +104,25 @@ get_header(); ?>
 							<div class="line-white" style="border-top-width: 5px;"></div>
 
 							<div class="sub-newest">															
-								<p>13.05 Dampak Social Media</p>
-								<p>12.56 Pro Kontra UU ITE</p>
-								<p>11.47 Profil Ruby On Rail</p>
-								<p>10.45 Mengulas 4G/LTE</p>
-								<p>09.55 Serangan Virus</p>
-								<p>09.14 Evolusi E-Commerce</p>							
+								<?php
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+								?>	
+									<p>
+									
+										<a href="<?php echo the_permalink()?>"  style="color:black;" title="<?php echo get_the_title(); ?>">
+										<?php
+										echo substr((get_the_date('d-m-y').' '.get_the_title()),0,28).'...';
+										?>
+										</a>
+										
+									</p>
+								<?php	
+									
+								}
+								wp_reset_postdata();
+							?>
+									<p>&nbsp;</p>						
 							</div>							
 						</div>
 					</div>

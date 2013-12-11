@@ -308,8 +308,10 @@ a.top-login-link:hover {
 	margin-top: 10px;
 }
 
+/* Category Accordion Styles */
+
 #gadgets-toggle {
-	background-image: url(img/gadget-toggle.png);
+	background-image: url(img/gadgets-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -318,15 +320,18 @@ a.top-login-link:hover {
 }
 
 #gadgets-toggle:hover {
-	background-image: url(img/gadget-toggle-selected.png);
+	background-image: url(img/gadgets-toggle-selected.png);
 }
 
-#gadgets-toggle-content {
-	padding: 0 10px 0 20px;
+.toggle-content {
+	padding: 20px 10px 10px 20px;
 }
 
-#gadgets-toggle-content a {
+.toggle-content a {
+	font-family: 'Open Sans', arial;
 	color: #000000;
+	display: block;
+	margin: 0 0 10px 0;
 }
 
 .toggle-category {
@@ -338,8 +343,8 @@ a.top-login-link:hover {
 	padding-top: 1px;
 }
 
-#socmed-toggle {
-	background-image: url(img/socmed-toggle.png);
+#sosial-media-toggle {
+	background-image: url(img/sosial-media-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -347,20 +352,12 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#socmed-toggle:hover {
-	background-image: url(img/socmed-toggle-selected.png);
+#sosial-media-toggle:hover {
+	background-image: url(img/sosial-media-toggle-selected.png);
 }
 
-#socmed-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#socmed-toggle-content a {
-	color: #000000;
-}
-
-#ite-toggle {
-	background-image: url(img/ite-toggle.png);
+#uu-ite-toggle {
+	background-image: url(img/uu-ite-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -368,16 +365,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#ite-toggle:hover {
-	background-image: url(img/ite-toggle-selected.png);
-}
-
-#ite-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#ite-toggle-content a {
-	color: #000000;
+#uu-ite-toggle:hover {
+	background-image: url(img/uu-ite-toggle-selected.png);
 }
 
 #security-toggle {
@@ -393,16 +382,8 @@ a.top-login-link:hover {
 	background-image: url(img/security-toggle-selected.png);
 }
 
-#security-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#security-toggle-content a {
-	color: #000000;
-}
-
-#app-toggle {
-	background-image: url(img/app-toggle.png);
+#apps-os-toggle {
+	background-image: url(img/apps-os-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -410,16 +391,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#app-toggle:hover {
-	background-image: url(img/app-toggle-selected.png);
-}
-
-#app-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#app-toggle-content a {
-	color: #000000;
+#apps-os-toggle:hover {
+	background-image: url(img/apps-os-toggle-selected.png);
 }
 
 #opini-toggle {
@@ -441,13 +414,7 @@ a.top-login-link:hover {
 	background-color: #d4d4d4;	
 }
 
-#opini-toggle-content {
-	padding: 0 10px 0 20px;
-}
 
-#opini-toggle-content a {
-	color: #000000;
-}
 
 .gadgets-link {
 	background-image: url(img/gadget-toggle.png);

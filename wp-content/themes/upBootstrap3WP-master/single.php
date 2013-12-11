@@ -37,66 +37,33 @@ get_header(); ?>
 							<h3>KATEGORI</h3>
 						</div>
 						<div style="border-bottom: 2px solid; border-color: white;"></div>
-						<a href="#" id="gadgets-toggle"></a>
-						<div id="gadgets-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
 
-						<a href="#" id="socmed-toggle"></a>
-						<div id="socmed-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+						<?php 
+							$categories = get_categories(array(
+								'type' => 'post',
+								'hide_empty' => 0
+							));
 
-						<a href="#" id="ite-toggle"></a>
-						<div id="ite-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+							foreach ($categories as $category):
+						?>
+						<a href="#" id="<?php echo $category->slug; ?>-toggle"></a>
+						<div id="<?php echo $category->slug; ?>-toggle-content" class="toggle-content" style="display: none;">
+						<?php
+								$query = new WP_Query('posts_per_page=5&category_name=' . $category->slug);
 
-						<a href="#" id="security-toggle"></a>
-						<div id="security-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+								while ($query->have_posts()):
+									$query->the_post();
+						?>
+							<a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+						<?php
+								endwhile;
 
-						<a href="#" id="app-toggle"></a>
-						<div id="app-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
+								wp_reset_postdata();
+						?>	
 						</div>
-
-						<a href="#" id="opini-toggle"></a>
-						<div id="opini-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
-
+						<?php
+							endforeach;
+						?>
 					</div>
 
 					<div class="subscribe-widget" style="margin: 10px 0 0 0;">

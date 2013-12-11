@@ -20,13 +20,14 @@ function upbootwp_setup() {
 	load_theme_textdomain('upbootwp', get_template_directory().'/languages');
 
 	add_theme_support( 'automatic-feed-links' );
+	
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),
@@ -115,6 +116,14 @@ require get_template_directory().'/inc/customizer.php';
  */
 require get_template_directory().'/inc/jetpack.php';
 
+
+
+// Replaces the excerpt "more" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read More..</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
  * upbootwp_breadcrumbs function.
