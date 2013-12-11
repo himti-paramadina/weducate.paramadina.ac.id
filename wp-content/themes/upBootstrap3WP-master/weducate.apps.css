@@ -52,13 +52,60 @@
 
 }
 
+#ss-submit {
+	width: 100px;
+	margin-left: 300px;
+}
+
+.ss-form-entry {
+	padding: 0px;
+}
+
 .width-form {
-	width:270px;
+	width:250px;
+	background-color: #ececec;
+	border-color: #ffffff;
+	border-width: inherit;
+
+}
+
+.ss-form-entry {
+	width: 50px;
+	height: 1px;
+	
 }
 
 
+#entry_341812938 {
+	margin-left: 5px;
+	background-color: #ececec;
+	border-color: #ffffff;
+	border-width: inherit;
+	width: 250px;
+}
+
+.ss-q-title {
+	font-size: 10pt;
+	font: arial;
+	padding-right: 30px;
+
+
+}
+
+.ss-q-short {
+	width: 250px;
+}
+
+.ss-q-long {
+	background-color: #ececec;
+	border-color: #ffffff;
+	border-width: inherit;
+	width: 250px;
+}
+
 .contact-us-title p {
 	color: #ffffff;
+
 }
 
 .personal-team {
@@ -122,6 +169,7 @@ a.top-login-link:hover {
 	float: right;
 }
 
+
 .nav > li > a {
 	font-family: 'Open Sans', arial;
 	color: #f0efef !important;
@@ -132,6 +180,11 @@ a.top-login-link:hover {
 	background-color: #444345 !important;
 }
 
+.ss-q-short {
+	background-color: #ececec;
+	border-color: #ffffff;
+	border-width: inherit;
+}
 .navbar-brand {
 	width: 469px;
 	height: 155px;

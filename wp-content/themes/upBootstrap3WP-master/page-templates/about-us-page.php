@@ -62,7 +62,7 @@ get_header(); ?>
 				<a style="padding-bottom:10px"; href="#" id="contact-us-toggle"></a>
 				<div id="contact-us" style="display: none;">
 					
-					<div class="row" style="padding-top: 20px;">
+					<div class="row" style="padding-top: 20px; margin: 8px;" >
 						<div class="col-md-6">
 							<div class="contact-us-title">
 								<p style="color: #ffffff;">Silahkan isi data diri Anda beserta pertanyaan / saran / kritik Anda disini</p>
