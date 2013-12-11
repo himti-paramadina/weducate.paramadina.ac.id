@@ -74,6 +74,16 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/wowslider.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/script.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (gravatarAccounts.length > 0) {
+                for (var i = 0; i < gravatarAccounts.length; i++) {
+                    appendGravatar(gravatarAccounts[i]);
+                }
+            }
+        });
+    </script>
+
     <!-- Modal Forms -->
     <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">

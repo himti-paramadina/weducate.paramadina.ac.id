@@ -17,8 +17,7 @@ get_header(); ?>
 
 		<div class="row">
 			<div class="col-md-9">
-				<div class="category">
-				</div>
+				<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/about-us.png"/>
 			</div>
 
 			<div class="col-md-3 maps">
@@ -42,8 +41,6 @@ get_header(); ?>
 		</div>
 
 
-
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
 				<a style="padding-bottom:10px"; href="#" id="contact-us-toggle"></a>
 				<div id="contact-us" style="display: none;">
@@ -262,6 +259,7 @@ get_header(); ?>
 
 						<?php 
 							$count = 0;
+
 							foreach ($user_query->results as $user):
 								$count++;
 
@@ -269,64 +267,23 @@ get_header(); ?>
 									// Skip!
 								else:
 						?>
+						<script type="text/javascript">
+							gravatarAccounts.push("<?php echo md5($user->user_email) ?>");
+						</script>
 						<div class="col-md-2" style="margin-top: 20px;">
 							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
 
 							<p align="center"><?php echo $user->display_name; ?></p>
 							<p align="center">As Founder</p>
-							<p align="center">
-
-							<?php
-								
-								/* Get Gravatar Profile */
-
-								/*
-								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
-								$profile = unserialize($str);
-
-								if (is_array($profile) && isset( $profile['entry'])):
-									if (count($profile['entry'][0]['accounts']) > 0):
-										foreach ($profile['entry'][0]['accounts'] as $account):
-											if ($account['domain'] == "facebook.com"):
-							?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
-							<?php
-											endif;
-
-											if ($account['domain'] == "twitter.com"):
-							?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
-							<?php
-								 			endif;
-					 		?>
-
-					 		<?php
-					 						if ($account['domain'] == "google.com"):
-					 		?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
-							<?php
-											endif;
-										endforeach;
-									endif;
-
-								endif;
-								*/
-								?>
-
+							<p align="center" id="<?php echo md5($user->user_email) ?>-accounts">
 								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
-
 							</p>
 						</div>	
 
 								<?php
 									if ($count % 6 == 0) echo "</div><div class=\"row\">";
-							
 								endif;
-
-
 							endforeach; 
-
-						
 						?>
 
 					</div>
@@ -415,5 +372,9 @@ get_header(); ?>
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
+
+	<script type="text/javascript">
+
+	</script>
 
 <?php get_footer(); ?>
