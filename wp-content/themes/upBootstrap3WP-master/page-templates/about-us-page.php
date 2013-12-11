@@ -16,8 +16,10 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 		<div class="row">
-			<div class="col-md-9">
-				<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/about-us.png"/>
+			<div class="col-md-9 about-text">
+				<p class="about">Weducate merupakan suatu <em>Social Project</em> dalam bentuk penyediaan media untuk <em>sharing</em> berbagai ilmu yang berkaitan dengan perkembangan teknologi. <em>Development</em> weducate dikerjakan oleh seluruh mahasiswa yang mengambil mata kuliah Komputer Masyarakat tahun ajaran 2013/2014. Dengan adanya weducate ini harapannya adalah dapat menjadi sebuah media untuk sharing mengenai hal apa saja yang berkitan dengan perkembangan teknologi, mulai dari hal yang sangat teknis akan perkembangan teknologi hingga hal yang berkaitan dengan undang-undang informasi dan transaksi elektronik (UU ITE).  Weducate membuka peluang bagi siapapun dan dimanapun yang ingin berkontribusi memberikan tulisannya untuk dinikmati oleh khalayak ramai sebagai pengetahuan baru yang akan membuka cakrawala pembaca mengenai perkembangan teknologi yang sedang terjadi saat ini. </p>
+
+				<p class="about">Dalam pelaksanaannya, weducate akan terbagi menjadi enam fokus pembicaraan yaitu <strong><em>Gadgets, Social Media, UU ITE, Security, Apss & Operating System and Opini</em></strong>. Dengan pembagian klasifikasi topik tersebut harapannya adalah memudahkan user dalam pencarian suatu informasi. Semoga weducate dapat menjadi salah satu proyek yang dapat meningkatkan Universitas Paramadina khususnya Program Studi Teknik Informatika.</p>
 			</div>
 
 			<div class="col-md-3 maps">
@@ -42,30 +44,30 @@ get_header(); ?>
 			<div class="col-md-8 col-md-offset-2">
 				<div class="row">
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">Advisor & Lecturer</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/advisor-n-lecturer.png"/>
+						<a href="#" id="advisor">Advisor & Lecturer</a>
 					</div>
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">Head of Development</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/head-development.png"/>
+						<a href="#" id="head-dev">Head of Development</a>
 					</div>
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">Content Management</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/content-mng-team.png"/>
+						<a href="#" id="content-mng">Content Management</a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">Front End Developer</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/front-end-dev.png"/>
+						<a href="#" id="front-end">Front End Developer</a>
 					</div>
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">UI Designer</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/ui-designer.png"/>
+						<a href="#" id="ui-designer">UI Designer</a>
 					</div>
 					<div class="col-md-4 team-profile">
-						<img src="http://placehold.it/260x260" class="img-responsive" />
-						<a href="#">Back End Developer</a>
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/back-end-dev.png"/>
+						<a href="#" id="back-end">Back End Developer</a>
 					</div>
 				</div>
 			</div>

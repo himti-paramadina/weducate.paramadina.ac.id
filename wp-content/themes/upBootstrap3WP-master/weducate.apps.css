@@ -560,3 +560,17 @@ table.data {
 	margin-bottom: 30px;
 }
 
+.about {
+	line-height: 2em;
+	text-align: justify;
+}
+
+.about-text {
+	padding-right: 50px;
+}
+
+/* Overridden Wp Admin */
+
+.login #nav, .login #backtoblog {
+	text-shadow: 0 0 #000 !important;
+}

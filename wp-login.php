@@ -92,8 +92,8 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 		$login_header_url   = network_home_url();
 		$login_header_title = $current_site->site_name;
 	} else {
-		$login_header_url   = __( 'http://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_url   = __( 'http://weducate.paramadina.ac.id/' );
+		$login_header_title = __( 'Weducate Paramadina' );
 	}
 
 	/**
