@@ -160,6 +160,16 @@ a.top-login-link:hover {
 	border-color: #26a1d3 !important;
 }
 
+.btn-submit {
+	width: 100px;
+	height: 30px;
+	background-color: #26a1d3 !important;
+	border-color: #fff !important;
+	margin-left: 300px;
+	color: #fff !important;
+	font-family: 'Open Sans', arial;
+}
+
 /* Overridden Bootstrap Styles */
 
 .navbar {
@@ -210,7 +220,7 @@ a.top-login-link:hover {
 }
 
 .input-subscribe {
-	width: 223px;
+	width: 211px;
 	height: 41px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -219,7 +229,7 @@ a.top-login-link:hover {
 .btn-subscribe {
 	background-color: #ffc100;
 	border-color: #ffc100;
-	width: 223px;
+	width: 210px;
 	margin-bottom: 10px;
 }
 

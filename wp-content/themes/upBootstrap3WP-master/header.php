@@ -42,7 +42,7 @@
 				else: 
 					$current_user = wp_get_current_user();
 			?>
-			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Hi <strong><?php echo $current_user->display_name ?></strong>!</a></p>
+			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Hai <strong><?php echo $current_user->display_name ?></strong>!</a></p>
 			<?php
 				endif;
 			?>
