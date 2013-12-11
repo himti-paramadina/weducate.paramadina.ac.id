@@ -88,31 +88,31 @@
     <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content modal-login">
-                <div class="modal-header">
+                <!-- <div class="modal-header">
                     <h4 class="modal-title" id="myModalLabel" style="color:#ffffff;">Login</h4>
-                </div>
+                </div> -->
                 <div class="modal-body">
                     <img src="<?php echo get_template_directory_uri() ?>/img/logo-white.png" style="width:50%;"/>
                     <form name="loginform" id="loginform" action="http://localhost/weducate/wp-login.php" method="post">
-                        <p>
-                            <label for="user_login" class="label-form-login">Username<br>
-                            <input type="text" name="log" id="user_login" class="input" value="" size="20"></label>
-                        </p>
-                        <p>
-                            <label for="user_pass" class="label-form-login">Password<br>
-                            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"></label>
-                        </p>
-                            <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
-                        <p class="submit">
-                            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
+                        <div class="form-group">
+                            <label for="user_login" class="label-form-login" style="color: #ebebeb;">Username<br>
+                            <input type="text" name="log" id="user_login" class="form-control" value="" size="20"></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_pass" style="color: #ebebeb;">Password<br>
+                            <input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20"></label>
+                        </div>
+                            <!-- <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p> -->
+                        <p class="submit" style="text-align: center;">
+                            <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-warning" value="Log In">
                             <input type="hidden" name="redirect_to" value="http://localhost/weducate/wp-admin/">
                             <input type="hidden" name="testcookie" value="1">
                         </p>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></button>
-                </div>
+                </div> -->
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->    

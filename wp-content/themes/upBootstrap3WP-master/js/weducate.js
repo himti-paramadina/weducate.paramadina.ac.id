@@ -45,6 +45,59 @@ $("#opini-toggle").click(function(){
 	$("#opini-toggle-content").slideToggle("slow", function(){});
 });
 
+$("#advisor").click(function(){
+	event.preventDefault();
+	$("#advisor").popover({
+		"content"	: "QK. Dikara Barcah, MBA",
+		"placement"	: 'top'
+	})
+})
+
+$("#head-dev").click(function(){
+	event.preventDefault();
+	$("#head-dev").popover({
+		"content"	: "Emanuel A. Cahyono",
+		"placement"	: 'top'
+	})
+})
+
+$("#content-mng").click(function(){
+	event.preventDefault();
+	$("#content-mng").popover({
+		"html"		: true,
+		"content"	: "Rizkina<br />Andy Syahrizal<br />Fatimah A. Hasanuddin",
+		"placement"	: 'top'
+	})
+})
+
+$("#front-end").click(function(){
+	event.preventDefault();
+	$("#front-end").popover({
+		"html"		: true,
+		"content"	: "Saras Kartika<br />Faras Dianda<br />Andhini Saraswati",
+		"placement"	: 'top'
+	})
+})
+
+$("#ui-designer").click(function(){
+	event.preventDefault();
+	$("#ui-designer").popover({
+		"html"		: true,
+		"content"	: "Ardie Ramadha<br />Azam A. Furqon",
+		"placement"	: 'top'
+	})
+})
+
+$("#back-end").click(function(){
+	event.preventDefault();
+	$("#back-end").popover({
+		"html"		: true,
+		"content"	: "Imam Hidayat<br />Nazilil Asror",
+		"placement"	: 'top'
+	})
+})
+
+
 /* Get Gravatar Functions */
 
 function gravatarCallbackHandle(data) {
