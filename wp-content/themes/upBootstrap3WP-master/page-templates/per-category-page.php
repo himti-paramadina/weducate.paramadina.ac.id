@@ -39,9 +39,9 @@ get_header(); ?>
 						?>
 					</div>
 					<div class="col-md-9">
-						<h4><?php the_title(); ?></h4>
-						<?php 
-							the_excerpt();
+						<h4><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h4>
+						<?php 							
+							the_excerpt(); 
 						?>
 					</div>
 				</div>
