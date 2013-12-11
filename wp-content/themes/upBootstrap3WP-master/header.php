@@ -8,7 +8,7 @@
  * @package upBootWP 0.1
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">

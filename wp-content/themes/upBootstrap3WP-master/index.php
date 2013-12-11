@@ -63,10 +63,13 @@ get_header(); ?>
 									$the_query->the_post();
 								?>	
 									<a href="#" title="">
+									<?php 
+										if ( has_post_thumbnail() ) {
+											$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+									?>
+									<img src="<?php echo $img_url ?>" width="128" height="48"/>
 									<?php
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail(array(128, 48));
-									}
+										} 
 									?>
 									</a>
 								<?php	

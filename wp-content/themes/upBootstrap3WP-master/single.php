@@ -9,26 +9,49 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
-			
-					<?php while ( have_posts() ) : the_post(); ?>
-			
-						<?php get_template_part( 'content', 'single' ); ?>
-			
-						<?php upbootwp_content_nav( 'nav-below' ); ?>
-			
-						<?php
-	                            // If comments are open or we have at least one comment, load up the comment template
-	                            if ( comments_open() || '0' != get_comments_number() )
-	                                    comments_template();
-	                    ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php endwhile; // end of the loop. ?>
-			
-					</main><!-- #main -->
-				</div><!-- #primary -->
-			</div><!-- .col-md-8 -->
+				<div class="page-header content-text">
+					<h1><?php echo get_the_title(); ?></h1>
+					<p>Diposkan pada <?php the_date('F j, Y', '<strong>', '</strong>', true); ?> oleh <strong><?php the_author(); ?></strong></p>
+
+					<!-- AddThis Button BEGIN -->
+				    <div class="addthis_toolbox addthis_default_style ">
+				    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				    <a class="addthis_button_tweet"></a>
+				    <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+				    <a class="addthis_counter addthis_pill_style"></a>
+				    </div>
+				    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52a8ee573066b15b"></script>
+				    <!-- AddThis Button END -->
+				</div>
+		
+				<div class="content-text">
+					<?php 
+						if ( has_post_thumbnail() ) {
+							$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+					?>
+					<img src="<?php echo $img_url ?>" class="img-responsive" style="margin-bottom: 20px;" />
+					<?php
+						} 
+					?>
+
+					<?php the_content(); ?>
+				</div>
+
+				<div class="page-header">
+					<h1>Diskusikan Tulisan Ini</h1>
+				</div>
+
+					<?php
+                            // If comments are open or we have at least one comment, load up the comment template
+                            if ( comments_open() || '0' != get_comments_number() )
+                                    comments_template();
+                    ?>
+
+				<?php endwhile; // end of the loop. ?>
+			</div>	
 			
 			<div class="col-md-3">
 				<div class="bg-white">
