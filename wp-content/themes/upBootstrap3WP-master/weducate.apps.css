@@ -427,3 +427,12 @@ a.top-login-link:hover {
 #content {
 	padding-top: 0;
 }
+
+.modal-content {
+	background-color: #09A1DA;
+	text-align: center;
+}
+
+.label-form-login {
+	margin-top: 20px;
+}

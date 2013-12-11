@@ -77,18 +77,19 @@
     <!-- Modal Forms -->
     <div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content modal-login">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                    <h4 class="modal-title" id="myModalLabel" style="color:#ffffff;">Login</h4>
                 </div>
                 <div class="modal-body">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/logo-white.png" style="width:50%;"/>
                     <form name="loginform" id="loginform" action="http://localhost/weducate/wp-login.php" method="post">
                         <p>
-                            <label for="user_login">Username<br>
+                            <label for="user_login" class="label-form-login">Username<br>
                             <input type="text" name="log" id="user_login" class="input" value="" size="20"></label>
                         </p>
                         <p>
-                            <label for="user_pass">Password<br>
+                            <label for="user_pass" class="label-form-login">Password<br>
                             <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"></label>
                         </p>
                             <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
@@ -100,7 +101,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->

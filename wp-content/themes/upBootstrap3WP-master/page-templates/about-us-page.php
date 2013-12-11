@@ -263,8 +263,12 @@ get_header(); ?>
 
 						<?php 
 							$count = 0;
-							foreach ($user_query->results as $user): 
+							foreach ($user_query->results as $user):
 								$count++;
+
+								if ($user->display_name == "weducate"):
+									// Skip!
+								else:
 						?>
 						<div class="col-md-2" style="margin-top: 20px;">
 							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
@@ -274,33 +278,36 @@ get_header(); ?>
 							<p align="center">
 
 							<?php
+								
 								/* Get Gravatar Profile */
 
 								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
 								$profile = unserialize($str);
+
 								if (is_array($profile) && isset( $profile['entry'])):
-									foreach ($profile['entry'][0]['accounts'] as $account):
-										if ($account['domain'] == "facebook.com"):
+									if (count($profile['entry'][0]['accounts']) > 0):
+										foreach ($profile['entry'][0]['accounts'] as $account):
+											if ($account['domain'] == "facebook.com"):
 							?>
 								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
 							<?php
-										endif;
+											endif;
 
-										if ($account['domain'] == "twitter.com"):
+											if ($account['domain'] == "twitter.com"):
 							?>
 								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
 							<?php
-								 		endif;
+								 			endif;
 					 		?>
 
 					 		<?php
-					 					if ($account['domain'] == "google.com"):
+					 						if ($account['domain'] == "google.com"):
 					 		?>
 								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
 							<?php
-										endif;
-									endforeach;
-								endif;
+											endif;
+										endforeach;
+									endif;
 							?>
 
 								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
@@ -308,8 +315,14 @@ get_header(); ?>
 							</p>
 						</div>							
 						<?php
+								endif;
+
 								if ($count % 6 == 0) echo "</div><div class=\"row\">";
+							
+								endif;
 							endforeach; 
+
+
 						?>
 
 					</div>
