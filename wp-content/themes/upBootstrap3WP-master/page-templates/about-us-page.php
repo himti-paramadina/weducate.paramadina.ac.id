@@ -238,8 +238,8 @@ get_header(); ?>
 												<tbody>
 													<tr>
 														<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-															<input type="submit" name="submit" value="Submit" id="ss-submit">
-														</td>
+															<button type="button" class="btn-submit">SUBMIT</button>
+														</td>	
 													</tr>
 												</tbody>
 											</table>
