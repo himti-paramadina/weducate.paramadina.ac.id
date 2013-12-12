@@ -61,7 +61,7 @@
         	<div class="footer">
         		<div class="container">
         			<div class="row">
-	            		<p>&copy; weducate 2013 | Privasi & aturan | Term of service</p>            
+	            		<p style="font-family: 'Open Sans', arial;">&copy; 2013 Tim Pengembang Weducate | Privasi &amp; Aturan | Term of Services</p>            
 	            	</div>
         		</div>
             </div>
