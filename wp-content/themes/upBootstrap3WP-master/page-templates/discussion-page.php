@@ -27,8 +27,53 @@ get_header(); ?>
 						));
 					?>
 				</div><!-- .entry-content -->
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-	
+				
+				<div class="row">
+					<?php
+						$the_query = new WP_Query('posts_per_page=20');
+
+						$count = 0;
+						while ( $the_query->have_posts() ):
+							$count++;
+							$the_query->the_post();
+					?>	
+						<div class="col-md-4 content-text" style="margin: 0 0 30px 0;">
+							<div style="height: 40px; display: block; margin: 0 0 10px 0;">
+					<?php
+							$post_categories = get_the_category();
+
+							foreach ($post_categories as $post_category):
+					?>
+								
+								<div style="float: left;"><img width="40" height="40" src="<?php echo get_template_directory_uri() ?>/img/icon-<?php echo $post_category->slug; ?>.png"/></div>
+								<a href="<?php bloginfo('url') ?>/kategori-<?php echo $post_category->slug ?>" style="float: left; display: block; margin: 0 10px 0 10px; line-height: 40px; font-family: 'Open Sans'; color: black;"><?php echo $post_category->name; ?></a>
+								
+					<?php
+							endforeach;
+					?>
+							</div>
+					
+					<?php 
+							if ( has_post_thumbnail() ) {
+								$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+					?>
+								<img src="<?php echo $img_url ?>" class="img-responsive" style="margin-bottom: 20px;" />
+					<?php
+							} 
+					?>
+
+							<a href="<?php echo the_permalink()?>"><h3 style="padding: 0; margin: 0;"><?php echo get_the_title(); ?></h3></a>
+
+						</div>
+					<?php		
+							if ($count % 3 == 0) {
+								echo '</div><div class="row">';
+							}
+						endwhile;
+						wp_reset_postdata();
+					?>
+				</div>
+
 			</div><!-- .col-md-9 -->
 			<div class="col-md-3">
 
@@ -39,65 +84,32 @@ get_header(); ?>
 					
 					<div style="border-bottom: 2px solid; border-color: white; margin: 0 10px 10px 10px;"></div>
 					
-					<a href="#" id="gadgets-toggle"></a>
-						<div id="gadgets-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+					<?php 
+							$categories = get_categories(array(
+								'type' => 'post',
+								'hide_empty' => 0
+							));
 
-						<a href="#" id="socmed-toggle"></a>
-						<div id="socmed-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+							foreach ($categories as $category):
+						?>
+						<a href="#" id="<?php echo $category->slug; ?>-toggle"></a>
+						<div id="<?php echo $category->slug; ?>-toggle-content" class="toggle-content" style="display: none;">
+					<?php
+							$query = new WP_Query('posts_per_page=5&category_name=' . $category->slug);
 
-						<a href="#" id="ite-toggle"></a>
-						<div id="ite-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+							while ($query->have_posts()):
+								$query->the_post();
+					?>
+							<a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+					<?php
+							endwhile;
 
-						<a href="#" id="security-toggle"></a>
-						<div id="security-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
+							wp_reset_postdata();
+					?>	
 						</div>
-
-						<a href="#" id="app-toggle"></a>
-						<div id="app-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
-
-						<a href="#" id="opini-toggle"></a>
-						<div id="opini-toggle-content" style="display: none;">
-							<a href="#">Fenomena Baru: Gadget Holic</a><br>
-							<a href="#">Kian Menjamurnya Mobile Programming</a><br>
-							<a href="#">Menilik Konflik Hak Paten</a><br>
-							<a href="#">Dampak Gadget Pada Kepribadian</a><br>
-							<a href="#">Mengenal Multi-Tasking Gadget</a><br>
-							<a href="#">Developer Mobile Twitter yang kian Maju</a>
-						</div>
+					<?php
+						endforeach;
+					?>
 				</div>
 
 				<div class="twitter-widget">

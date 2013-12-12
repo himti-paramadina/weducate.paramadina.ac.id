@@ -101,6 +101,7 @@ get_header(); ?>
 						<?php
 							endforeach;
 						?>
+						
 					</div>
 
 					<div class="subscribe-widget" style="margin: 10px 0 0 0;">
