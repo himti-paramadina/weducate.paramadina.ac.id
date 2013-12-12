@@ -17,8 +17,15 @@ get_header(); ?>
 				<header class="entry-header page-header">
 					<?php
 						$current_page = get_post(get_the_ID());
+						$category_slug = substr($current_page->post_name, 9, strlen($current_page->post_name));
 					?>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<div style="width: 100%; height: 50px; display: block; clear: both;">
+						<div style="float: left;">
+							<img src="<?php echo get_template_directory_uri() ?>/img/icon-<?php echo $category_slug ?>.png" width="50" height="50"/>
+						</div>
+						<h1 style="line-height: 50px; float: left; margin: 0 0 0 12px; padding: 0; font-family: 'Open Sans', arial; font-size: 3.2em;"><?php the_title(); ?></h1>
+					</div>
+					
 				</header><!-- .entry-header -->
 				
 				<?php
@@ -27,6 +34,11 @@ get_header(); ?>
 					while ($query->have_posts()):
 						$query->the_post();
 				?>	
+				<div class="row">
+					<div class="col-md-12">
+						<h2><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-md-3">
 						<?php 
@@ -39,10 +51,11 @@ get_header(); ?>
 						?>
 					</div>
 					<div class="col-md-9">
-						<h4><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h4>
+						<div class="content-text">
 						<?php 							
 							the_excerpt(); 
 						?>
+						</div>
 					</div>
 				</div>
 				<?php
@@ -59,12 +72,18 @@ get_header(); ?>
 					
 					<div style="border-bottom: 2px solid; border-color: white; margin: 0 10px 10px 10px;"></div>
 					
-					<a href="<?php bloginfo('url') ?>/?page_id=21" class="gadgets-link"></a>
-					<a href="<?php bloginfo('url') ?>/?page_id=24" class="socmed-link"></a>
-					<a href="<?php bloginfo('url') ?>/?page_id=27" class="ite-link"></a>
-					<a href="<?php bloginfo('url') ?>/?page_id=30" class="security-link"></a>
-					<a href="<?php bloginfo('url') ?>/?page_id=33" class="app-link"></a>
-					<a href="<?php bloginfo('url') ?>/?page_id=36" class="opini-link"></a>
+					<?php 
+						$categories = get_categories(array(
+							'type' => 'post',
+							'hide_empty' => 0
+						));
+
+						foreach ($categories as $category):
+					?>
+					<a href="<?php bloginfo('url') ?>/kategori-<?php echo $category->slug ?>" class="<?php echo $category->slug ?>-link"></a>
+					<?php	
+						endforeach;
+					?>
 				</div>
 
 				<div class="twitter-widget">

@@ -14,35 +14,7 @@
 		<div class="before-footer">
 
 			<div class="container">
-				<div class="row">
-            		<div class="col-md-4">
-            			<div class="title-before-footer">
-            				<h4>Artiel Terkini</h4>
-            			</div>
-            			<div class="content-before-footer">            			
-	            			<p>
-	            				Pro Kontra UU ITE</br>
-	            				Evolusi E-Commerce</br>
-	            				Profil Ruby on Rail</br>
-	            				Dampak Negatif Gadget
-	            			</p>
-	            		</div>
-            		</div>
-
-            		<div class="col-md-4">
-            			<div class="title-before-footer">
-            				<h4>Artikel Terpopuler</h4>
-            			</div>
-            			<div class="content-before-footer">
-	            			<p>
-	            				Pro Kontra UU ITE</br>
-	            				Evolusi E-Commerce</br>
-	            				Profil Ruby on Rail</br>
-	            				Dampak Negatif Gadget
-	            			</p>
-	            		</div>
-            		</div>
-
+				<div class="row">            		
             		<div class="col-md-4">
             			<div class="title-before-footer">
             				<h4>Credits</h4>
@@ -61,7 +33,7 @@
         	<div class="footer">
         		<div class="container">
         			<div class="row">
-	            		<p>&copy; weducate 2013 | Privasi & aturan | Term of service</p>            
+	            		<p style="font-family: 'Open Sans', arial;">&copy; 2013 Tim Pengembang Weducate | Privasi &amp; Aturan | Term of Services</p>            
 	            	</div>
         		</div>
             </div>

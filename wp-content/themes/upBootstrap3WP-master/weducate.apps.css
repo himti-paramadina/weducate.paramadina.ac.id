@@ -417,7 +417,7 @@ a.top-login-link:hover {
 
 
 .gadgets-link {
-	background-image: url(img/gadget-toggle.png);
+	background-image: url(img/gadgets-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -426,11 +426,11 @@ a.top-login-link:hover {
 }
 
 .gadgets-link:hover {
-	background-image: url(img/gadget-toggle-selected.png);	
+	background-image: url(img/gadgets-toggle-selected.png);	
 }
 
-.socmed-link {
-	background-image: url(img/socmed-toggle.png);
+.sosial-media-link {
+	background-image: url(img/sosial-media-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -438,12 +438,12 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-.socmed-link:hover {
-	background-image: url(img/socmed-toggle-selected.png);
+.sosial-media-link:hover {
+	background-image: url(img/sosial-media-toggle-selected.png);
 }
 
-.ite-link {
-	background-image: url(img/ite-toggle.png);
+.uu-ite-link {
+	background-image: url(img/uu-ite-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -451,8 +451,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
-.ite-link:hover {
-	background-image: url(img/ite-toggle-selected.png);
+.uu-ite-link:hover {
+	background-image: url(img/uu-ite-toggle-selected.png);
 }
 
 .security-link {
@@ -468,8 +468,8 @@ a.top-login-link:hover {
 	background-image: url(img/security-toggle-selected.png);	
 }
 
-.app-link {
-	background-image: url(img/app-toggle.png);
+.apps-os-link {
+	background-image: url(img/apps-os-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -477,8 +477,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
-.app-link:hover {
-	background-image: url(img/app-toggle-selected.png);
+.apps-os-link:hover {
+	background-image: url(img/apps-os-toggle-selected.png);
 }
 
 .opini-link {
@@ -535,6 +535,10 @@ table.data {
 .content-text h1 {
 	font-size: 3.5em;
 	font-weight: bold;
+}
+
+.content-text h3 {
+	font-family: 'Open Sans', arial;
 }
 
 .about {

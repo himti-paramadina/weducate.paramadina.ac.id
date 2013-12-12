@@ -12,7 +12,21 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="page-header content-text">
-					<h1><?php echo get_the_title(); ?></h1>
+					<div style="width: 100%; height: 40px; display: block; clear: both;">
+					<?php
+						$post_categories = get_the_category();
+
+						foreach ($post_categories as $post_category):
+					?>
+						<div style="float: left;">
+							<img src="<?php echo get_template_directory_uri() ?>/img/icon-<?php echo $post_category->slug ?>.png" width="40" height="40"/>
+						</div>
+						<h3 style="font-family: 'Open Sans', arial; float: left; line-height: 40px; margin: 0 12px 0 12px; padding: 0;"><?php echo $post_category->name; ?></h3>
+					<?php
+						endforeach;
+					?>
+					</div>
+					<h1 style="margin-top: 10px;"><?php echo get_the_title(); ?></h1>
 					<p>Diposkan pada <?php the_date('F j, Y', '<strong>', '</strong>', true); ?> oleh <strong><?php the_author(); ?></strong></p>
 
 					<!-- AddThis Button BEGIN -->
@@ -87,6 +101,7 @@ get_header(); ?>
 						<?php
 							endforeach;
 						?>
+						
 					</div>
 
 					<div class="subscribe-widget" style="margin: 10px 0 0 0;">
