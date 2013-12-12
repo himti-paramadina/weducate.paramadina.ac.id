@@ -537,6 +537,10 @@ table.data {
 	font-weight: bold;
 }
 
+.content-text h3 {
+	font-family: 'Open Sans', arial;
+}
+
 .about {
 	line-height: 2em;
 	text-align: justify;

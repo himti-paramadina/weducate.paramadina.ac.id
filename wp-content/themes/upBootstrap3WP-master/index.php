@@ -107,30 +107,55 @@ get_header(); ?>
 							<div class="line-white" style="border-top-width: 5px;"></div>
 
 							<div class="sub-newest">															
-								<?php
-								while ( $the_query->have_posts() ) {
-									$the_query->the_post();
-								?>	
-									<p>
-									
-										<a href="<?php echo the_permalink()?>"  style="color:black;" title="<?php echo get_the_title(); ?>">
-										<?php
-										echo substr((get_the_date('d-m-y').' '.get_the_title()),0,28).'...';
-										?>
-										</a>
-										
-									</p>
-								<?php	
-									
-								}
-								wp_reset_postdata();
-							?>
+								
 									<p>&nbsp;</p>						
 							</div>							
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>Artikel Terbaru</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<?php
+				$count = 0;
+				while ( $the_query->have_posts() ):
+					$count++;
+					$the_query->the_post();
+			?>	
+				<div class="col-md-4 content-text" style="margin: 0 0 30px 0;">
+					<div style="height: 40px; display: block; margin: 0 0 10px 0;">
+			<?php
+					$post_categories = get_the_category();
+
+					foreach ($post_categories as $post_category):
+			?>
+						
+						<div style="float: left;"><img width="40" height="40" src="<?php echo get_template_directory_uri() ?>/img/icon-<?php echo $post_category->slug; ?>.png"/></div>
+						<a href="<?php bloginfo('url') ?>/kategori-<?php echo $post_category->slug ?>" style="float: left; display: block; margin: 0 10px 0 10px; line-height: 40px; font-family: 'Open Sans'; color: black;"><?php echo $post_category->name; ?></a>
+						
+			<?php
+					endforeach;
+			?>
+					</div>
+			
+					<a href="<?php echo the_permalink()?>"><h3 style="padding: 0; margin: 0;"><?php echo get_the_title(); ?></h3></a>
+				</div>
+			<?php		
+					if ($count % 3 == 0) {
+						echo '</div><div class="row">';
+					}
+				endwhile;
+				wp_reset_postdata();
+			?>
 		</div>
 
 		<div class="row">

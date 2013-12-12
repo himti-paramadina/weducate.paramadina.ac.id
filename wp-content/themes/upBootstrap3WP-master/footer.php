@@ -14,35 +14,7 @@
 		<div class="before-footer">
 
 			<div class="container">
-				<div class="row">
-            		<div class="col-md-4">
-            			<div class="title-before-footer">
-            				<h4>Artiel Terkini</h4>
-            			</div>
-            			<div class="content-before-footer">            			
-	            			<p>
-	            				Pro Kontra UU ITE</br>
-	            				Evolusi E-Commerce</br>
-	            				Profil Ruby on Rail</br>
-	            				Dampak Negatif Gadget
-	            			</p>
-	            		</div>
-            		</div>
-
-            		<div class="col-md-4">
-            			<div class="title-before-footer">
-            				<h4>Artikel Terpopuler</h4>
-            			</div>
-            			<div class="content-before-footer">
-	            			<p>
-	            				Pro Kontra UU ITE</br>
-	            				Evolusi E-Commerce</br>
-	            				Profil Ruby on Rail</br>
-	            				Dampak Negatif Gadget
-	            			</p>
-	            		</div>
-            		</div>
-
+				<div class="row">            		
             		<div class="col-md-4">
             			<div class="title-before-footer">
             				<h4>Credits</h4>
