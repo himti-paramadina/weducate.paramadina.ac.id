@@ -17,11 +17,11 @@ get_header(); ?>
 
 		<div class="row">
 			<div class="col-md-9 content-text">
-				<p class="about">Weducate merupakan suatu <em>Social Project</em> dalam bentuk penyediaan media untuk <em>sharing</em> berbagai ilmu yang berkaitan dengan perkembangan teknologi informasi. <em>Development</em> weducate dikerjakan oleh seluruh mahasiswa yang mengambil mata kuliah Komputer Masyarakat tahun ajaran 2013/2014. Dengan adanya weducate ini harapannya adalah dapat menjadi sebuah media untuk sharing mengenai hal apa saja yang berkitan dengan perkembangan teknologi informasi, mulai dari hal yang sangat teknis akan perkembangan teknologi hingga hal yang berkaitan dengan undang-undang informasi dan transaksi elektronik (UU ITE).</p>
+				<p class="about"><strong>Weducate</strong> merupakan <em>Social Project</em> untuk berbagi pengetahuan yang berkaitan dengan pemanfaatan teknologi informasi di masyarakat. <strong>Weducate</strong> dibuat oleh seluruh mahasiswa yang mengambil mata kuliah Komputer dalam Masyarakat pada tahun ajaran 2013/2014. Harapan kami adalah masyarakat memperoleh tambahan pengetahuan dan mendapatkan pemahaman yang baik mengenai berbagai hal, terutama perihal hukum dan etika, saat berinteraksi dengan memanfaatkan perangkat teknologi informasi.</p>
 
-				<p>Weducate membuka peluang bagi siapapun dan dimanapun yang ingin berkontribusi memberikan tulisannya untuk dinikmati oleh khalayak ramai sebagai pengetahuan baru yang akan membuka cakrawala pembaca mengenai perkembangan teknologi yang sedang terjadi saat ini. </p>
+				<p><strong>Weducate</strong> membuka peluang bagi siapapun dan dimanapun yang ingin memberikan tulisannya untuk dinikmati oleh masyarakat Indonesia. Tentu pengetahuan yang disampaikan akan membuka cakrawala pembaca mengenai perkembangan teknologi dan dampaknya dalam masyarakat yang saat ini sedang terjadi. </p>
 
-				<p class="about">Dalam pelaksanaannya, weducate akan terbagi menjadi enam fokus pembicaraan yaitu <strong><em>Gadgets, Social Media, UU ITE, Security, Apss &amp; Operating System and Opini</em></strong>. Dengan pembagian klasifikasi topik tersebut harapannya adalah memudahkan user dalam pencarian suatu informasi. Semoga weducate dapat menjadi salah satu proyek yang dapat meningkatkan Universitas Paramadina khususnya Program Studi Teknik Informatika.</p>
+				<p class="about">Ada 6 topik utama dalam situs ini yaitu <strong><em>Perangkat, Media Sosial, Hukum dan Etika, Keamanan, serta Sistem Operasi dan Aplikasi</em></strong>. Setiap artikel merupakan pengalaman pribadi dari masing-masing kontributor. ditulis oleh kontributor yang sudah mencoba sendiri  Dengan pembagian klasifikasi topik tersebut harapannya adalah memudahkan user dalam pencarian suatu informasi. Semoga weducate dapat menjadi salah satu proyek yang dapat meningkatkan Universitas Paramadina khususnya Program Studi Teknik Informatika.</p>
 			</div>
 
 			<div class="col-md-3 maps">
