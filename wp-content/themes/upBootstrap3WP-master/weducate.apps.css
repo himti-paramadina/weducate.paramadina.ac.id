@@ -123,12 +123,38 @@
 	-moz-border-radius: 80px; 
 }
 
+.team-profile {
+	padding: 0;
+	height: 260px;
+}
+
+.team-profile a {
+	font-family: 'Open Sans', arial;
+	font-size: 1.2em;
+	color: #ffffff;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	line-height: 40px;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	bottom: 40px;
+	text-decoration: none;
+}
+
+.team-profile a:hover {
+	background-color: #09A1DA;
+}
+
 .bg-white {
 	background-color: #ffffff !important;
 }
 
 .maps {
-	background-color: #fdcb01;
+	background-color: #444345;
 }
 
 .maps-title {
@@ -158,6 +184,16 @@ a.top-login-link:hover {
 	width: 180px;
 	background-color: #26a1d3 !important;
 	border-color: #26a1d3 !important;
+}
+
+.btn-submit {
+	width: 100px;
+	height: 30px;
+	background-color: #26a1d3 !important;
+	border-color: #fff !important;
+	margin-left: 300px;
+	color: #fff !important;
+	font-family: 'Open Sans', arial;
 }
 
 /* Overridden Bootstrap Styles */
@@ -272,8 +308,10 @@ a.top-login-link:hover {
 	margin-top: 10px;
 }
 
+/* Category Accordion Styles */
+
 #gadgets-toggle {
-	background-image: url(img/gadget-toggle.png);
+	background-image: url(img/gadgets-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -282,15 +320,18 @@ a.top-login-link:hover {
 }
 
 #gadgets-toggle:hover {
-	background-image: url(img/gadget-toggle-selected.png);
+	background-image: url(img/gadgets-toggle-selected.png);
 }
 
-#gadgets-toggle-content {
-	padding: 0 10px 0 20px;
+.toggle-content {
+	padding: 20px 10px 10px 20px;
 }
 
-#gadgets-toggle-content a {
+.toggle-content a {
+	font-family: 'Open Sans', arial;
 	color: #000000;
+	display: block;
+	margin: 0 0 10px 0;
 }
 
 .toggle-category {
@@ -302,8 +343,8 @@ a.top-login-link:hover {
 	padding-top: 1px;
 }
 
-#socmed-toggle {
-	background-image: url(img/socmed-toggle.png);
+#sosial-media-toggle {
+	background-image: url(img/sosial-media-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -311,20 +352,12 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#socmed-toggle:hover {
-	background-image: url(img/socmed-toggle-selected.png);
+#sosial-media-toggle:hover {
+	background-image: url(img/sosial-media-toggle-selected.png);
 }
 
-#socmed-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#socmed-toggle-content a {
-	color: #000000;
-}
-
-#ite-toggle {
-	background-image: url(img/ite-toggle.png);
+#uu-ite-toggle {
+	background-image: url(img/uu-ite-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -332,16 +365,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#ite-toggle:hover {
-	background-image: url(img/ite-toggle-selected.png);
-}
-
-#ite-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#ite-toggle-content a {
-	color: #000000;
+#uu-ite-toggle:hover {
+	background-image: url(img/uu-ite-toggle-selected.png);
 }
 
 #security-toggle {
@@ -357,16 +382,8 @@ a.top-login-link:hover {
 	background-image: url(img/security-toggle-selected.png);
 }
 
-#security-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#security-toggle-content a {
-	color: #000000;
-}
-
-#app-toggle {
-	background-image: url(img/app-toggle.png);
+#apps-os-toggle {
+	background-image: url(img/apps-os-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -374,16 +391,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-#app-toggle:hover {
-	background-image: url(img/app-toggle-selected.png);
-}
-
-#app-toggle-content {
-	padding: 0 10px 0 20px;
-}
-
-#app-toggle-content a {
-	color: #000000;
+#apps-os-toggle:hover {
+	background-image: url(img/apps-os-toggle-selected.png);
 }
 
 #opini-toggle {
@@ -405,16 +414,10 @@ a.top-login-link:hover {
 	background-color: #d4d4d4;	
 }
 
-#opini-toggle-content {
-	padding: 0 10px 0 20px;
-}
 
-#opini-toggle-content a {
-	color: #000000;
-}
 
 .gadgets-link {
-	background-image: url(img/gadget-toggle.png);
+	background-image: url(img/gadgets-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -423,11 +426,11 @@ a.top-login-link:hover {
 }
 
 .gadgets-link:hover {
-	background-image: url(img/gadget-toggle-selected.png);	
+	background-image: url(img/gadgets-toggle-selected.png);	
 }
 
-.socmed-link {
-	background-image: url(img/socmed-toggle.png);
+.sosial-media-link {
+	background-image: url(img/sosial-media-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -435,12 +438,12 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;	
 }
 
-.socmed-link:hover {
-	background-image: url(img/socmed-toggle-selected.png);
+.sosial-media-link:hover {
+	background-image: url(img/sosial-media-toggle-selected.png);
 }
 
-.ite-link {
-	background-image: url(img/ite-toggle.png);
+.uu-ite-link {
+	background-image: url(img/uu-ite-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -448,8 +451,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
-.ite-link:hover {
-	background-image: url(img/ite-toggle-selected.png);
+.uu-ite-link:hover {
+	background-image: url(img/uu-ite-toggle-selected.png);
 }
 
 .security-link {
@@ -465,8 +468,8 @@ a.top-login-link:hover {
 	background-image: url(img/security-toggle-selected.png);	
 }
 
-.app-link {
-	background-image: url(img/app-toggle.png);
+.apps-os-link {
+	background-image: url(img/apps-os-toggle.png);
 	height: 40px;
 	width: 100%;
 	display: block;
@@ -474,8 +477,8 @@ a.top-login-link:hover {
 	background-repeat: no-repeat;
 }
 
-.app-link:hover {
-	background-image: url(img/app-toggle-selected.png);
+.apps-os-link:hover {
+	background-image: url(img/apps-os-toggle-selected.png);
 }
 
 .opini-link {
@@ -508,4 +511,47 @@ a.top-login-link:hover {
 
 .label-form-login {
 	margin-top: 20px;
+}
+
+.userdata {
+	background-color: #ececec;
+
+}
+
+table.data {
+	font-size: 16pt;
+}
+
+.kontribusi {
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.content-text p, .content-text ul li, .content-text ol li {
+	font-family: 'Open Sans', arial;
+	line-height: 1.7em;
+}
+
+.content-text h1 {
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.content-text h3 {
+	font-family: 'Open Sans', arial;
+}
+
+.about {
+	line-height: 2em;
+	text-align: justify;
+}
+
+.about-text {
+	padding-right: 50px;
+}
+
+/* Overridden Wp Admin */
+
+.login #nav, .login #backtoblog {
+	text-shadow: 0 0 #000 !important;
 }

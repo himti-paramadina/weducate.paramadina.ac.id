@@ -19,28 +19,70 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-9">
 					
-						<div id="wowslider-container1">
-							<div class="ws_images"><ul>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/hydrangeas.jpg" alt="Hydrangeas" title="Hydrangeas" id="wows1_0"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/jellyfish.jpg" alt="Jellyfish" title="Jellyfish" id="wows1_1"/>image 2</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/koala.jpg" alt="Koala" title="Koala" id="wows1_2"/>image3</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/lighthouse.jpg" alt="Lighthouse" title="Lighthouse" id="wows1_3"/>image 4</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/penguins.jpg" alt="Penguins" title="Penguins" id="wows1_4"/>image 5</li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/tulips.jpg" alt="Tulips" title="Tulips" id="wows1_5"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/chrysanthemum.jpg" alt="Chrysanthemum" title="Chrysanthemum" id="wows1_6"/></li>
-								<li><img src="<?php echo get_template_directory_uri(); ?>/img/slider/images/desert.jpg" alt="Desert" title="Desert" id="wows1_7"/></li>
+						<div id="wowslider-container5">
+							<div class="ws_images">
+								<ul>
+							<?php
+								$the_query = new WP_Query( 'post_type=post&posts_per_page=6&orderby=date&order=DESC' );
+
+								// The Loop
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+								?>	
+									<li>
+									<?php
+									if ( has_post_thumbnail() ) {
+										?><a href="<?php echo the_permalink()?>">
+										<?php
+										the_post_thumbnail('full','title=');										
+										?>
+										</a>
+										<a href="<?php echo the_permalink()?>"  style="color:white;">
+										<?php
+										echo get_the_title();
+										?>
+										</a>
+										<?php
+									}
+									
+									?>
+								     
+									</li>
+								<?php	
+									
+								}
+								wp_reset_postdata();
+							?>
+								
 								</ul>
 							</div>
 							<div class="ws_thumbs">
 								<div>
-									<a href="#" title="Hydrangeas"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/hydrangeas.jpg" alt="" /></a>
-									<a href="#" title="Jellyfish"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/jellyfish.jpg" alt="" /></a>
-									<a href="#" title="Koala"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/koala.jpg" alt="" /></a>
-									<a href="#" title="Lighthouse"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/lighthouse.jpg" alt="" /></a>
-									<a href="#" title="Penguins"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/penguins.jpg" alt="" /></a>
-									<a href="#" title="Tulips"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/tulips.jpg" alt="" /></a>
-									<a href="#" title="Chrysanthemum"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/chrysanthemum.jpg" alt="" /></a>
-									<a href="#" title="Desert"><img src="<?php echo get_template_directory_uri(); ?>/img/slider/tooltips/desert.jpg" alt="" /></a>
+							<?php	
+								while ( $the_query->have_posts() ) {
+									$the_query->the_post();
+								?>	
+									<a href="#" title="">
+									<?php 
+										if ( has_post_thumbnail() ) {
+											$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+									?>
+									<img src="<?php echo $img_url ?>" width="128" height="48"/>
+									<?php
+										} 
+									?>
+									</a>
+								<?php	
+									
+								}
+
+								/* Restore original Post Data 
+								 * NB: Because we are using new WP_Query we aren't stomping on the 
+								 * original $wp_query and it does not need to be reset.
+								*/
+								wp_reset_postdata();
+							?>
+									
 								</div>
 							</div>
 						</div>
@@ -65,17 +107,55 @@ get_header(); ?>
 							<div class="line-white" style="border-top-width: 5px;"></div>
 
 							<div class="sub-newest">															
-								<p>13.05 Dampak Social Media</p>
-								<p>12.56 Pro Kontra UU ITE</p>
-								<p>11.47 Profil Ruby On Rail</p>
-								<p>10.45 Mengulas 4G/LTE</p>
-								<p>09.55 Serangan Virus</p>
-								<p>09.14 Evolusi E-Commerce</p>							
+								
+									<p>&nbsp;</p>						
 							</div>							
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>Artikel Terbaru</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<?php
+				$count = 0;
+				while ( $the_query->have_posts() ):
+					$count++;
+					$the_query->the_post();
+			?>	
+				<div class="col-md-4 content-text" style="margin: 0 0 30px 0;">
+					<div style="height: 40px; display: block; margin: 0 0 10px 0;">
+			<?php
+					$post_categories = get_the_category();
+
+					foreach ($post_categories as $post_category):
+			?>
+						
+						<div style="float: left;"><img width="40" height="40" src="<?php echo get_template_directory_uri() ?>/img/icon-<?php echo $post_category->slug; ?>.png"/></div>
+						<a href="<?php bloginfo('url') ?>/kategori-<?php echo $post_category->slug ?>" style="float: left; display: block; margin: 0 10px 0 10px; line-height: 40px; font-family: 'Open Sans'; color: black;"><?php echo $post_category->name; ?></a>
+						
+			<?php
+					endforeach;
+			?>
+					</div>
+			
+					<a href="<?php echo the_permalink()?>"><h3 style="padding: 0; margin: 0; font-size: 22px;"><?php echo get_the_title(); ?></h3></a>
+				</div>
+			<?php		
+					if ($count % 3 == 0) {
+						echo '</div><div class="row">';
+					}
+				endwhile;
+				wp_reset_postdata();
+			?>
 		</div>
 
 		<div class="row">

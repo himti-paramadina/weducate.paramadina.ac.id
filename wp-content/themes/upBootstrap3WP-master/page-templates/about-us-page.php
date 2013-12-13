@@ -16,9 +16,12 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 		<div class="row">
-			<div class="col-md-9">
-				<div class="category">
-				</div>
+			<div class="col-md-9 content-text">
+				<p class="about"><strong>Weducate</strong> merupakan <em>Social Project</em> untuk berbagi pengetahuan yang berkaitan dengan pemanfaatan teknologi informasi di masyarakat. <strong>Weducate</strong> dibuat oleh seluruh mahasiswa yang mengambil mata kuliah Komputer dalam Masyarakat pada tahun ajaran 2013/2014. Harapan kami adalah masyarakat memperoleh tambahan pengetahuan dan mendapatkan pemahaman yang baik mengenai berbagai hal, terutama perihal hukum dan etika, saat berinteraksi dengan memanfaatkan perangkat teknologi informasi.</p>
+
+				<p><strong>Weducate</strong> membuka peluang bagi siapapun dan dimanapun yang ingin memberikan tulisannya untuk dinikmati oleh masyarakat Indonesia. Tentu pengetahuan yang disampaikan akan membuka cakrawala pembaca mengenai perkembangan teknologi dan dampaknya dalam masyarakat yang saat ini sedang terjadi. </p>
+
+				<p class="about">Ada 6 topik utama dalam situs ini yaitu <strong><em>Perangkat, Media Sosial, Hukum dan Etika, Keamanan, serta Sistem Operasi dan Aplikasi</em></strong>. Setiap artikel merupakan pengalaman pribadi dari masing-masing kontributor. ditulis oleh kontributor yang sudah mencoba sendiri  Dengan pembagian klasifikasi topik tersebut harapannya adalah memudahkan user dalam pencarian suatu informasi. Semoga weducate dapat menjadi salah satu proyek yang dapat meningkatkan Universitas Paramadina khususnya Program Studi Teknik Informatika.</p>
 			</div>
 
 			<div class="col-md-3 maps">
@@ -26,24 +29,52 @@ get_header(); ?>
 					<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/maps-logo.png"/>
 					</div>
 					<div style="float:left;">
-						<p>Phone +6221 00 0011</p>
-						<p>Info@weducate.com</p>
-						<p>Jl. Gatot Subroto Kav. 97</p>
-					</div>
-					
-				
-
-				
+						<p style="color: #fff;">Phone +6221 00 0011</p>
+						<p style="color: #fff;">info@weducate.com</p>
+						<p style="color: #fff;">Jl. Gatot Subroto Kav. 97</p>
+					</div>			
 				</div>
+
 				<div style="padding-bottom: 10px;">
-					<iframe width="263" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left">
+					<iframe width="263" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br />
+					<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;aq=0&amp;oq=Universitas+Paramadina&amp;sll=37.0625,-95.677068&amp;sspn=42.495706,79.013672&amp;ie=UTF8&amp;hq=Universitas+Paramadina,+Mampang+Prapatan,+DKI+Jakarta,+Indonesia&amp;t=m&amp;ll=-6.241106,106.832975&amp;spn=0.003626,0.002811&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left"></a>
 				</div>
 			</div>
 		</div>
 
+		<div class="row" style="padding: 30px 0 30px 0;">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/advisor-n-lecturer.png"/>
+						<a href="#" id="advisor">Advisor & Lecturer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/head-development.png"/>
+						<a href="#" id="head-dev">Head of Development</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/content-mng-team.png"/>
+						<a href="#" id="content-mng">Content Management</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/front-end-dev.png"/>
+						<a href="#" id="front-end">Front End Developer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/ui-designer.png"/>
+						<a href="#" id="ui-designer">UI Designer</a>
+					</div>
+					<div class="col-md-4 team-profile">
+						<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/dev-team/back-end-dev.png"/>
+						<a href="#" id="back-end">Back End Developer</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
 				<a style="padding-bottom:10px"; href="#" id="contact-us-toggle"></a>
 				<div id="contact-us" style="display: none;">
@@ -238,8 +269,8 @@ get_header(); ?>
 												<tbody>
 													<tr>
 														<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-															<input type="submit" name="submit" value="Submit" id="ss-submit">
-														</td>
+															<button type="button" class="btn-submit">SUBMIT</button>
+														</td>	
 													</tr>
 												</tbody>
 											</table>
@@ -262,6 +293,7 @@ get_header(); ?>
 
 						<?php 
 							$count = 0;
+
 							foreach ($user_query->results as $user):
 								$count++;
 
@@ -269,64 +301,23 @@ get_header(); ?>
 									// Skip!
 								else:
 						?>
+						<script type="text/javascript">
+							gravatarAccounts.push("<?php echo md5($user->user_email) ?>");
+						</script>
 						<div class="col-md-2" style="margin-top: 20px;">
 							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
 
 							<p align="center"><?php echo $user->display_name; ?></p>
 							<p align="center">As Founder</p>
-							<p align="center">
-
-							<?php
-								
-								/* Get Gravatar Profile */
-
-								/*
-								$str = file_get_contents('http://www.gravatar.com/' . md5($user->user_email) . '.php');
-								$profile = unserialize($str);
-
-								if (is_array($profile) && isset( $profile['entry'])):
-									if (count($profile['entry'][0]['accounts']) > 0):
-										foreach ($profile['entry'][0]['accounts'] as $account):
-											if ($account['domain'] == "facebook.com"):
-							?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/fb-icon.png"/></a>
-							<?php
-											endif;
-
-											if ($account['domain'] == "twitter.com"):
-							?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/twitter-icon.png"/></a>
-							<?php
-								 			endif;
-					 		?>
-
-					 		<?php
-					 						if ($account['domain'] == "google.com"):
-					 		?>
-								<a target="_blank" href="<?php echo $account['url'] ?>"><img src="<?php echo get_template_directory_uri();?>/img/gmail-icon.png"/></a>
-							<?php
-											endif;
-										endforeach;
-									endif;
-
-								endif;
-								*/
-								?>
-
+							<p align="center" id="<?php echo md5($user->user_email) ?>-accounts">
 								<a href="mailto:<?php echo $user->user_email ?>"><img src="<?php echo get_template_directory_uri();?>/img/email-icon.png"/></a>
-
 							</p>
 						</div>	
 
 								<?php
 									if ($count % 6 == 0) echo "</div><div class=\"row\">";
-							
 								endif;
-
-
 							endforeach; 
-
-						
 						?>
 
 					</div>
@@ -415,5 +406,9 @@ get_header(); ?>
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
+
+	<script type="text/javascript">
+
+	</script>
 
 <?php get_footer(); ?>

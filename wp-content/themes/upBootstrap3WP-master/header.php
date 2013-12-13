@@ -8,7 +8,7 @@
  * @package upBootWP 0.1
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,12 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/engine_slider1/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section -->
 	
+	<script type="text/javascript">
+		var SITE_THEME_URL = "<?php echo get_template_directory_uri(); ?>";
+
+		var gravatarAccounts = [];
+		var temporary = [];
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -42,7 +48,7 @@
 				else: 
 					$current_user = wp_get_current_user();
 			?>
-			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Hi <strong><?php echo $current_user->display_name ?></strong>!</a></p>
+			<p align="right"><a href="#" class="top-login-link"><span class="glyphicon glyphicon-user"></span> Hai <strong><?php echo $current_user->display_name ?></strong>!</a></p>
 			<?php
 				endif;
 			?>
