@@ -147,7 +147,7 @@ get_header(); ?>
 			?>
 					</div>
 			
-					<a href="<?php echo the_permalink()?>"><h3 style="padding: 0; margin: 0;"><?php echo get_the_title(); ?></h3></a>
+					<a href="<?php echo the_permalink()?>"><h3 style="padding: 0; margin: 0; font-size: 22px;"><?php echo get_the_title(); ?></h3></a>
 				</div>
 			<?php		
 					if ($count % 3 == 0) {

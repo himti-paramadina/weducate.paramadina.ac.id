@@ -14,7 +14,26 @@
 		<div class="before-footer">
 
 			<div class="container">
-				<div class="row">            		
+				<div class="row">
+                    <div class="col-md-4">
+                        <div class="title-before-footer">
+                            <h4>Tentang Weducate</h4>
+                        </div>
+                        <div class="content-before-footer">
+                            <p>Weducate merupakan suatu <em>Social Project</em> dalam bentuk penyediaan media untuk <em>sharing</em> berbagai ilmu yang berkaitan dengan perkembangan teknologi informasi. <a target="_blank" href="http://localhost/weducate/tentang-kami/" style="color: #fff;">Selengkapnya...</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="title-before-footer">
+                            <h4>Weducate</h4>
+                        </div>
+                        <div class="content-before-footer">
+                            <p>Universitas Paramadina<br />
+                            Jl. Gatot Soebroto Kav. 97<br />
+                            Mampang, Jakarta Selatan 12790<br />
+                            T. +62-21-7918-1188</p>
+                        </div>
+                    </div>            		
             		<div class="col-md-4">
             			<div class="title-before-footer">
             				<h4>Credits</h4>

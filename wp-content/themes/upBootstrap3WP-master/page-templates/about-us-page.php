@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<div class="row">
 			<div class="col-md-9 content-text">
-				<p class="about">Weducate merupakan suatu <em>Social Project</em> dalam bentuk penyediaan media untuk <em>sharing</em> berbagai ilmu yang berkaitan dengan perkembangan teknologi. <em>Development</em> weducate dikerjakan oleh seluruh mahasiswa yang mengambil mata kuliah Komputer Masyarakat tahun ajaran 2013/2014. Dengan adanya weducate ini harapannya adalah dapat menjadi sebuah media untuk sharing mengenai hal apa saja yang berkitan dengan perkembangan teknologi, mulai dari hal yang sangat teknis akan perkembangan teknologi hingga hal yang berkaitan dengan undang-undang informasi dan transaksi elektronik (UU ITE).</p>
+				<p class="about">Weducate merupakan suatu <em>Social Project</em> dalam bentuk penyediaan media untuk <em>sharing</em> berbagai ilmu yang berkaitan dengan perkembangan teknologi informasi. <em>Development</em> weducate dikerjakan oleh seluruh mahasiswa yang mengambil mata kuliah Komputer Masyarakat tahun ajaran 2013/2014. Dengan adanya weducate ini harapannya adalah dapat menjadi sebuah media untuk sharing mengenai hal apa saja yang berkitan dengan perkembangan teknologi informasi, mulai dari hal yang sangat teknis akan perkembangan teknologi hingga hal yang berkaitan dengan undang-undang informasi dan transaksi elektronik (UU ITE).</p>
 
 				<p>Weducate membuka peluang bagi siapapun dan dimanapun yang ingin berkontribusi memberikan tulisannya untuk dinikmati oleh khalayak ramai sebagai pengetahuan baru yang akan membuka cakrawala pembaca mengenai perkembangan teknologi yang sedang terjadi saat ini. </p>
 
@@ -29,9 +29,9 @@ get_header(); ?>
 					<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/maps-logo.png"/>
 					</div>
 					<div style="float:left;">
-						<p>Phone +6221 00 0011</p>
-						<p>info@weducate.com</p>
-						<p>Jl. Gatot Subroto Kav. 97</p>
+						<p style="color: #fff;">Phone +6221 00 0011</p>
+						<p style="color: #fff;">info@weducate.com</p>
+						<p style="color: #fff;">Jl. Gatot Subroto Kav. 97</p>
 					</div>			
 				</div>
 
