@@ -21,7 +21,11 @@ get_header(); ?>
 
 				<p><strong>Weducate</strong> membuka peluang bagi siapapun dan dimanapun yang ingin memberikan tulisannya untuk dinikmati oleh masyarakat Indonesia. Tentu pengetahuan yang disampaikan akan membuka cakrawala pembaca mengenai perkembangan teknologi dan dampaknya dalam masyarakat yang saat ini sedang terjadi. </p>
 
-				<p class="about">Ada 6 topik utama dalam situs ini yaitu <strong><em>Perangkat, Media Sosial, Hukum dan Etika, Keamanan, serta Sistem Operasi dan Aplikasi</em></strong>. Setiap artikel merupakan pengalaman pribadi dari masing-masing kontributor. ditulis oleh kontributor yang sudah mencoba sendiri  Dengan pembagian klasifikasi topik tersebut harapannya adalah memudahkan user dalam pencarian suatu informasi. Semoga weducate dapat menjadi salah satu proyek yang dapat meningkatkan Universitas Paramadina khususnya Program Studi Teknik Informatika.</p>
+				<p class="about">Ada 6 topik utama dalam situs ini, yaitu <strong><em>Perangkat, Media Sosial, Hukum dan Etika, Keamanan, serta Sistem Operasi dan Aplikasi</em></strong>. Setiap artikel merupakan pengalaman pribadi dari masing-masing kontributor dan memiliki kompetensi yang memadai. Sebelum dipublikasikan, setiap artikel dicermati oleh editor untuk memastikan tulisan dan bahasanya mudah dicerna.</p>
+
+				<p class="about">Selanjutnya, Himpunan Mahasiswa Teknik Informatika Paramadina akan membantu dalam pengelolaan <strong>Weducate</strong>. Dengan demikian, diharapkan situs ini dapat terus dipelihara dan dikembangkan serta bermanfaat bagi masyarakat.</p>
+
+				<p>Semoga <strong>Weducate</strong> dapat menjadi salah satu media yang berperan aktif dalam meningkatkan pengetahuan masyarakat di bidang teknologi informasi.</p>
 			</div>
 
 			<div class="col-md-3 maps">
