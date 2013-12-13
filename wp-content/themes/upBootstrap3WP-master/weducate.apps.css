@@ -270,8 +270,10 @@ a.top-login-link:hover {
 }
 
 .sub-newest {
-	height: 230px;
 	margin: 5px 10px 0 10px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	/*background-color: #ffc100;*/
 }
 
 #contact-us-toggle {

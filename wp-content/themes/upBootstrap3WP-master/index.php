@@ -57,39 +57,49 @@ get_header(); ?>
 								</ul>
 							</div>
 							<div class="ws_thumbs">
-								<div>
-							<?php	
-								while ( $the_query->have_posts() ) {
-									$the_query->the_post();
-								?>	
-									<a href="#" title="">
-									<?php 
-										if ( has_post_thumbnail() ) {
-											$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
-									?>
-									<img src="<?php echo $img_url ?>" width="128" height="48"/>
-									<?php
-										} 
-									?>
-									</a>
-								<?php	
-									
-								}
+								<center>
+									<div style="background-color: #ebebeb;">
+										<?php	
+											while ( $the_query->have_posts() ) {
+												$the_query->the_post();
+											?>	
+												<a href="#" title="">
+												<?php 
+													if ( has_post_thumbnail() ) {
+														$img_url = wp_get_attachment_url( get_post_thumbnail_id($query->ID) );
+												?>
+												<img src="<?php echo $img_url ?>" width="128" height="48"/>
+												<?php
+													} 
+												?>
+												</a>
+											<?php	
+												
+											}
 
-								/* Restore original Post Data 
-								 * NB: Because we are using new WP_Query we aren't stomping on the 
-								 * original $wp_query and it does not need to be reset.
-								*/
-								wp_reset_postdata();
-							?>
+											/* Restore original Post Data 
+											 * NB: Because we are using new WP_Query we aren't stomping on the 
+											 * original $wp_query and it does not need to be reset.
+											*/
+											wp_reset_postdata();
+										?>
 									
-								</div>
+									</div>
+								</center>
 							</div>
 						</div>
 					
 				</div>
 				<div class="col-md-3">
 					<div class="bg-white">
+						<div class="newest">
+							<div class="sub-newest">															
+								<img src="<?php echo get_template_directory_uri() ?>/img/tanya.png"/>
+							</div>							
+						</div>
+
+						<div class="line-white"></div>
+
 						<div class="subscribe-widget">
 							<div class="subscribe">
 								<input type="text" name="subscribe-text" placeholder="Type your email here" class="input-subscribe">
@@ -97,20 +107,6 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<div class="line-white"></div>
-
-						<div class="newest">
-							<div class="newest-title" style="padding-top: 10px;">
-								<center><p>Artikel Terbaru</p></center>
-							</div>
-
-							<div class="line-white" style="border-top-width: 5px;"></div>
-
-							<div class="sub-newest">															
-								
-									<p>&nbsp;</p>						
-							</div>							
-						</div>
 					</div>
 				</div>
 			</div>
