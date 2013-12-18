@@ -94,7 +94,7 @@ get_header(); ?>
 					<div class="bg-white">
 						<div class="newest">
 							<div class="sub-newest">															
-								<img src="<?php echo get_template_directory_uri() ?>/img/tanya.png"/>
+								<img src="<?php echo get_template_directory_uri() ?>/img/tanya.png" style="width:100%"/>
 							</div>							
 						</div>
 
