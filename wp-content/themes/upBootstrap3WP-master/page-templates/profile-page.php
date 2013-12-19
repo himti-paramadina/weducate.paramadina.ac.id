@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="row">
 
 				<header class="entry-header page-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="entry-title">Profil Kontributor</h1>
 				</header><!-- .entry-header -->
 			
 
@@ -21,39 +21,45 @@ get_header(); ?>
 				<p style="width: 100%; display: block; height: 1px; clear: both;"></p>
 
 				<div class="col-md-9 biodata">
+				<!– This sets the $curauth variable –>
+				<?php
+				if(isset($_GET['author_name'])) :
+				$curauth = get_userdatabylogin($author_name);
+				else :
+				$curauth = get_userdata(intval($author));
+				endif;
+				?>
+				
 				<table style="margin: 20px 10px;" class="data">
 					<tr>
 						<td style="width: 100px;">Nama</td>
 						<td style="padding: 0px 5px 0px 20px">:</td>
-						<td>Ardie Ramadhana</td>
+						<td><?php echo $curauth->display_name; ?></td>
 					</tr>
 					<tr>
 						<td style="width: 100px;">Email</td>
 						<td style="padding: 0px 5px 0px 20px">:</td>
-						<td>ardie.ramadhana@gmail.com</td>
+						<td><?php echo $curauth->user_email; ?></td>
 					</tr>
 					<tr>
-						<td style="width: 100px;">Pekerjaan</td>
+						<td style="width: 100px;">Website</td>
 						<td style="padding: 0px 5px 0px 20px">:</td>
-						<td>Programmer</td>
+						<td><?php echo $curauth->user_url; ?></td>
 					</tr>
 					<tr>
-						<td style="width: 100px;">Instansi</td>
+						<td style="width: 100px;">Description</td>
 						<td style="padding: 0px 5px 0px 20px">:</td>
-						<td>PT Mediatrac Sistem Komunikasi</td>
-					</tr>
-					<tr>
-						<td style="width: 100px;">Alamat</td>
-						<td style="padding: 0px 5px 0px 20px">:</td>
-						<td>Jalan Mampang Prapatan II No. 30 RT04 RW07</td>
+						<td><?php echo $curauth->description; ?></td>
 					</tr>
 				</table>
 				</div>
 
 				<div class="col-md-3 foto">
-					<p style="text-align: center; margin-top: 10px; "><img src="<?php echo get_template_directory_uri();?>/img/images/profil-icon.png"/></p>
-						<p><center>Nama</p>
-						<p><center>As Founder</p>
+					<p style="text-align: center; margin-top: 10px; ">
+					<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($curauth->user_email) ?>);"></a> 
+					</p>
+						<p><center><?php echo $curauth->display_name; ?></p>
+						<p><center></p>
 						<p style="margin-bottom: 10px">
 						<img src="<?php echo get_template_directory_uri();?>/img/images/profil-fb.png"/>
 						<img src="<?php echo get_template_directory_uri();?>/img//images/profil-tw.png"/>
@@ -77,62 +83,37 @@ get_header(); ?>
 				</div>
 
 			<div class="row kontribusi">
-
+				<!– The Loop –>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="row">
 
 						<div class="col-md-2">
-							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-1.png"/>
+							<?php 
+								if ( has_post_thumbnail() ) {
+									$img_url = wp_get_attachment_url( get_post_thumbnail_id() );
+							?>
+							<img src="<?php echo $img_url ?>" class="img-responsive" />
+							<?php
+								} 
+							?>							
 						</div>
 						<div class="col-md-10">
-							<h4 style="font-weight: bold;">Menilik Konflik Hak Paten</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
+							<h4 style="font-weight: bold;">
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+							<?php the_title(); ?></a>,
+							<?php the_time('d M Y'); ?> in <?php the_category('&');?>
+							</h4>
+							<p>
+								<?php 							
+								the_excerpt(); 
+								?>
+							</p>
 						</div>
 				</div>	
-				
-
-				<div class="row">
-						<div class="col-md-2">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-2.png"/>
-						</div>
-						<div class="col-md-10">
-							<h4 style="font-weight: bold;">Pembajakan Software di Mata Hukum</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
-						</div>
-
-				</div>
-
-				<div class="row">
-						<div class="col-md-2">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-3.png"/>
-						</div>
-						<div class="col-md-10">
-							<h4 style="font-weight: bold;">Dampak Gadget pada Kepribadian</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
-						</div>
-
-				</div>
-
-				<div class="row">
-						<div class="col-md-2">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-4.png"/>
-						</div>
-						<div class="col-md-10">
-							<h4 style="font-weight: bold;">Apa itu Multi-Tasking Gadget</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
-						</div>
-
-				</div>
-
-				<div class="row">
-						<div class="col-md-2">
-							<img class="img-responsive" src="<?php echo get_template_directory_uri();?>/img/images/thumbnail-5.png"/>
-						</div>
-						<div class="col-md-10">
-							<h4 style="font-weight: bold;">Majunya Developer Mobile Apps Twitter</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida enim eu metus vestibulum, non iaculis tellus imperdiet. Mauris ante nibh, laoreet vitae varius nec, pulvinar at libero. Curabitur a nulla nulla. Cras a volutpat mauris, at commodo lacus. Nam bibendum pharetra enim, mattis convallis massa condimentum a. Vesti.. </p>
-						</div>
-
-				</div>
+				<?php endwhile; else: ?>
+				<p><?php _e('No posts by this author.'); ?></p>
+				<?php endif; ?>
+				<!– End Loop –>
 			</div>
 			
 		</div><!-- .row -->

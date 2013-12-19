@@ -309,7 +309,7 @@ get_header(); ?>
 							gravatarAccounts.push("<?php echo md5($user->user_email) ?>");
 						</script>
 						<div class="col-md-2" style="margin-top: 20px;">
-							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
+							<a href="<?php echo get_author_posts_url($user->id); ?>" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
 
 							<p align="center"><?php echo $user->display_name; ?></p>
 							<p align="center">As Founder</p>
@@ -345,7 +345,7 @@ get_header(); ?>
 								else:
 						?>
 						<div class="col-md-2" style="margin-top: 20px;">
-							<a href="#" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
+							<a href="<?php echo get_author_posts_url($user->id); ?>" class="team-avatar" style="background-image: url(http://www.gravatar.com/avatar/<?php echo md5($user->user_email) ?>);"></a>
 
 							<p align="center"><?php echo $user->display_name; ?></p>
 							<p align="center">As Founder</p>

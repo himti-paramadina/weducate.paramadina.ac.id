@@ -27,7 +27,7 @@ get_header(); ?>
 					?>
 					</div>
 					<h1 style="margin-top: 10px;"><?php echo get_the_title(); ?></h1>
-					<p>Diposkan pada <?php the_date('F j, Y', '<strong>', '</strong>', true); ?> oleh <strong><?php the_author(); ?></strong></p>
+					<p>Diposkan pada <?php the_date('F j, Y', '<strong>', '</strong>', true); ?> oleh <strong><?php the_author_posts_link(); ?></strong></p>
 
 					<!-- AddThis Button BEGIN -->
 				    <div class="addthis_toolbox addthis_default_style ">
