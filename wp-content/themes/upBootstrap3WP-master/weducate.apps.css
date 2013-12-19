@@ -285,6 +285,17 @@ a.top-login-link:hover {
 	border-top: solid 2px #ebebeb;
 }
 
+#register-toggle {
+	background-image: url(img/btn-register.png);
+	height: 27px;
+	width: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-top: solid 2px #ebebeb;
+}
+
+
 #our-team-toggle {
 	background-image: url(img/our-team-btn.png);
 	height: 27px;
