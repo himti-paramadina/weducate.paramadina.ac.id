@@ -10,9 +10,9 @@ get_header(); ?>
 		
 		<div class="container">
 <?php while (have_posts()) : the_post(); ?>
-
 <br>
-			<div class="row">
+<br>
+			<div class="row" style="margin-bottom:30px">
 				<p align="center">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/register-1.png"/><img src="<?php echo get_template_directory_uri(); ?>/img/register-2.png"/><img src="<?php echo get_template_directory_uri(); ?>/img/register-3.png"/>
 				</p>
@@ -60,7 +60,7 @@ get_header(); ?>
 				<div class="row">
 					<!-- First Column -->
 
-					<div class="col-md-6" style="border-right:solid 1px black">
+					<div class="col-md-6" style="border-right:solid 2px grey">
 						
 						<div class="ss-form-question errorbox-good" style="height: 20px; margin-bottom:15px">
 							<div dir="ltr" class="ss-item ss-item-required ss-text"  style="width: 100%;">
@@ -235,7 +235,7 @@ get_header(); ?>
 							<tbody>
 								<tr>
 									<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-										<input type="submit" name="submit" value="Submit" id="ss-submit">
+										<input class="btn btn-primary" type="submit" name="submit" value="Submit" id="ss-submit">
 										<div class="ss-secondary-text">Never submit passwords through Google Forms.</div>
 									</td>
 								</tr>
