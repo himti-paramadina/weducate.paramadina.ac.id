@@ -30,7 +30,7 @@ get_header(); ?>
 
 			<div class="col-md-3 maps">
 				<div class="maps-title">
-					<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/maps-logo.png"/>
+					<div style="float:left; margin-right:10px;"><img src="<?php echo get_template_directory_uri();?>/img/map.png"/>
 					</div>
 					<div style="float:left;">
 						<p style="color: #fff;">Phone +6221 00 0011</p>
